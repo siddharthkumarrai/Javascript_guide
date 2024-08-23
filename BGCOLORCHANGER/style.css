@@ -1,0 +1,18 @@
+.buttons{
+    border: solid black 2px;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+    margin-left: 2rem;
+}
+#orange{
+    background-color: orange;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+}

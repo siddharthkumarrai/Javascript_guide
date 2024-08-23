@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table,th,td,td{
+    border : solid black 1.5px;
+}

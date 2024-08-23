@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(162, 162, 162);
+}
+label{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+form{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}

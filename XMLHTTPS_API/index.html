@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHML_API_REQUEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <div><img src="" alt=""></div>
+            <h1></h1>
+            <p>Lorem ipsum dolor sit amet, <br />
+                consectetur adipiscing elit.</p>
+        </div>
+        <div class="button-wrapper">
+            <button class="btn outline">DETAILS</button>
+            <button class="btn fill">BUY NOW</button>
+        </div>
+    </div>
+    </div>
+     
+    
+
+     <script>
+        let githubApi = "https://api.github.com/users/siddharthkumarrai"
+        // 0	UNSENT	Client has been created. open() not called yet.
+        let xhr = new XMLHttpRequest()
+        // 1	OPENED	open() has been called.
+        xhr.open("GET", githubApi, true)
+        console.log("OPENED CALLED", xhr.readyState)
+        // 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+        xhr.send()
+        console.log("SEND CALLED", xhr.HEADERS_RECEIVED)
+        // 3	LOADING	Downloading; responseText holds partial data.
+        xhr.onprogress = () => {
+            console.log("LOADING", xhr.readyState)
+        }
+        // 4	DONE	The operation is complete.
+        xhr.onload = ()=>{
+            console.log("DONE",xhr.readyState)
+        }
+        //arrow function ke andar this.responseText nahi use kar sakte response json me parse nahi hota
+        xhr.onreadystatechange = ()=>{
+            if (xhr.readyState === 4) {
+                let res = xhr.response   // string response
+                let objdata = JSON.parse(res)
+                console.log(typeof objdata)
+                console.log(objdata);
+                let name = document.querySelector("h1");
+                let image = document.querySelector("img");
+                name.innerText = objdata.login;
+                image.src = objdata.avatar_url  
+            }
+        }
+
+        // classical function mein this.response likh sate hain
+        // xhr.onreadystatechange = function () {
+        //     if(xhr.readyState === 4){
+        //         let data = this.responseText
+        //         console.log(data)
+        //     }      
+        // }
+        
+
+
+
+     </script>
+</body>
+</html>

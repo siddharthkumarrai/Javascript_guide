@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI_CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI CALCULATOR</h1>
+        <form>
+            <p>
+                <label for="weight">WEIGHT (in kg):</label>
+                <input type="text" id="weight" name="weight">
+            </p>
+            <p>
+                <label for="weight">HEIGHT (in cm):</label>
+                <input type="text" id="height" name="weight">
+            </p>
+            <button>SUBMIT</button>
+            <h3 id="result"></h3>
+
+
+
+        </form>
+        <div class="cateogry">
+            <p>
+                The BMI statistical categories below are based on BMI scores and apply to adults of age 20 years and upwards. The World
+                Health Organisation (WHO) regards a healthy adult BMI to be between 18.5 and 25.
+            </p>
+            <table>
+                <tr>
+                    <th>BMI</th>
+                    <th>BMI_CATEGORY</th>
+                </tr>
+                <tr id="less">
+                    <td>Less than 15</td>
+                    <td>Very severely underweight</td>
+                </tr>
+                <tr id="severelyunderweight">
+                    <td>Between 15 and 16</td>
+                    <td>Severely underweight</td>
+                </tr>
+                <tr id="underweight">
+                    <td>Between 16 and 18.5</td>
+                    <td>Underweight</td>
+                </tr>
+                <tr id="normal">
+                    <td>Between 18.5 and 25</td>
+                    <td>Normal (healthy weight)</td>
+                </tr>
+                <tr id="overweight">
+                    <td>Between 25 and 30</td>
+                    <td>Overweight</td>
+                </tr>
+                <tr id="moderatelyobese">
+                    <td>Between 30 and 35</td>
+                    <td>Moderately obese</td>
+                </tr>
+                <tr id="severelyobese">
+                    <td>Between 35 and 40</td>
+                    <td>Severely obese</td>
+                </tr>
+                <tr id="veryserverlyobese">
+                    <td>Over 40</td>
+                    <td>Very severely obese</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
