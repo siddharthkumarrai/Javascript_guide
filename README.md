@@ -128,16 +128,43 @@ Heap Memory:
 ```javascript
      const name = "siddharth"
      const repoCount = 50
-     console.log(`hello my name is ${name} and my repocount is ${repoCount}
+     console.log(`hello my name is ${name} and my repocount is ${repoCount}  // Template Literals:
 
      const gamename = new String("pubg")
      console.log(gamename[0]); // p
      console.log(gamename.__proto__);  node {} | browser String {'', anchor: ƒ, at: ƒ, big: ƒ, blink: ƒ, …}
 
-     1. String Key Concepts 
-     - String Properties:
-        let str = "Hello";
-        console.log(str.length);  // Output: 5
+     1. String Key Concepts
+
+        let str = "Hello World";
+
+      - String Properties:
+
+         console.log(str.length);  // Output: 11
+
+      - Common String Methods:
+
+         console.log(str.charAt(1));         // Output: 'e'
+         console.log(str.indexOf('l'));      // Output: 2
+         console.log(str.slice(1, 4));       // Output: 'ell'
+         console.log(str.substring(1, 4));   // Output: 'ell'
+         console.log(str.toUpperCase());     // Output: 'HELLO WORLD'
+         console.log(str.replace('H', 'J')); // Output: 'Jello World'
+         console.log(sentence.split(' '));   // Output: ['Hello', 'World']
+         console.log(str.trim());  // Output: 'HelloWorld'
+
+       - Immutable Strings:
+           let str = "Hello";
+           str[0] = "J";  // Does nothing
+           console.log(str);  // Output: 'Hello'
+
+
+         
+ 
+
+
+
+
 
 
 ```
