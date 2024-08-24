@@ -18,6 +18,7 @@ iii) var
 
 
 **DATATYPE**   (kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain)
+EcmaScript [Read Docs]([https://pages.github.com/](https://ecma-international.org/publications-and-standards/standards/ecma-262/)).
 1. Primitive  (call by value ( call karn pr copy milti hain))
      - Number       --> range (2<sup>53</sup>)
      - Bigint      --> ```const num = 123456789n```
@@ -26,3 +27,13 @@ iii) var
      - Null        --> standalone value
      - Undefined
      - Symbol      --> unique
+
+1. Non Primitive (Reference)  (call by value ( call karn pr copy milti hain))
+     - Object
+     - Array
+     - Function
+  
+
+
+
+
