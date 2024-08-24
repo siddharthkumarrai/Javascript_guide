@@ -127,8 +127,6 @@ Heap Memory:
 graph TD;
     stck
      userTwo-->userOne-->myName_(copy myName ki)-->anotherName-->myName;
-     userTwo-->Reference to Heap;
-     userOne-->Reference to Heap;
 ```
 ```
 
