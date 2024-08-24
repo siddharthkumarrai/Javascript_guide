@@ -1,6 +1,6 @@
 # JAVASCRIPT NOTES
 
-**VARIABLE**
+## VARIABLE
 
 i). let
 
@@ -16,7 +16,7 @@ iii) var
 > alert(3+3)   &nbsp; &nbsp;  &nbsp;    (*ERROR, we are using nodejs,not browser*)
 
 
-**DATATYPE** &nbsp;  &nbsp; (kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain)
+## DATATYPE &nbsp;  &nbsp; (kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain)
 
 EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards/standards/ecma-262/).
 
@@ -35,7 +35,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      - Function    &nbsp; &nbsp; **typeof --> function
 
 
-**CONVERSION**
+## CONVERSION
 ```javascript
      let score =                         "77" || "77abc" || null || undefined
      let valueINNumber = Number(score)   ----    --------   ----    ---------
@@ -46,7 +46,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      console.log(booleanIsLoggedIn)                 true || false ||  true  || false  
 ```
 
-**OPERATIONS**
+## OPERATIONS
 
 +, -, /, *, **, %
 
@@ -56,7 +56,7 @@ console.log(true+);     // error
 console.log(+"");       // 0
 ```
 
-**COMPARISON**
+## COMPARISON
 
  <, >, <=, >=, ==, !=
 ```javascript
@@ -71,7 +71,7 @@ console.log(undefined>=0);   //false
 ```
 === strict check
 
-**STACK AND HEAP MEMORY ALLOCATION IN JAVASCRIPT**
+## STACK AND HEAP MEMORY ALLOCATION IN JAVASCRIPT
 
 The following code demonstrates how variables and objects are stored in the stack and heap memory in JavaScript.
 
@@ -124,7 +124,7 @@ Heap Memory:
     0x001  --->  { email: "siddharthkumarrai777@gmail.com", username: "sidd" }
 ```
 
-**STRING**
+## STRING
 ```javascript
      const name = "siddharth"
      const repoCount = 50
