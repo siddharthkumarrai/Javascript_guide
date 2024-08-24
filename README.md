@@ -4,7 +4,7 @@
 
 i). let
 
-ii) const           (*ERROR assignment to const variable(variable ko change nahi kar skte ek bar value assign karne ke bad)*)
+ii) const &nbsp; &nbsp; &nbsp; (*ERROR assignment to const variable(variable ko change nahi kar skte ek bar value assign karne ke bad)*)
 
 iii) var
 > [!WARNING]
