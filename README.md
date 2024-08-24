@@ -40,7 +40,37 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      let score =                         "77" || "77abc" || null || undefined
      let valueINNumber = Number(score)   ----    --------   ----    ---------
      console.log(valueINNumber)           77  ||   NaN   ||  0   ||   NaN
+
+     let isLoggedIn =                               1    ||   0   || "sidd" || ""                        
+     let booleanIsLoggedIn = Boolean(isLoggedIn)    ---     -----    ------    ---
+     console.log(booleanIsLoggedIn)                 true || false ||  true  || false  
 ```
+
+**OPERATIONS**
+
++, -, /, *, **, %
+
+```
+console.log(+true);     // 1
+console.log(true+);     // error
+console.log(+"");       // 0
+```
+
+**COMPARISON**
+
+ >, <, <=, >=, ==, !=
+
+console.log("2">1);          //true
+console.log("02">1);         //true
+console.log(null>0);         //false
+console.log(null==0);        //false
+console.log(null>=0);        //true
+console.log(undefined>0);    //false
+console.log(undefined==0);   //false
+console.log(undefined>=0);   //false
+
+
+
 
 
   
