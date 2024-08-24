@@ -33,6 +33,14 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      - Object      &nbsp; &nbsp; &nbsp; **typeof --> object
      - Array       &nbsp; &nbsp; &nbsp; &nbsp; **typeof --> object
      - Function    &nbsp; &nbsp; **typeof --> function
+
+**CONVERSION**
+```
+     let score = &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "77" // "77abc" // null // undefined
+     let valueINNumber = Number(score)
+     console.log(valueINNumber) &nbsp; //77 //NaN // 0 // NaN
+
+```
   
 
 
