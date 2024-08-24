@@ -10,6 +10,6 @@ iii) var           (*prefer not to use var because of issue in block scope and f
 
 *important point*
 
-1.) "use strict";  (*treat all js code as a new version*)
+- "use strict";  (*treat all js code as a new version*)
 
-2.) alert(3+3)     (*ERROR, we are using nodejs,not browser*)
+- alert(3+3)     (*ERROR, we are using nodejs,not browser*)
