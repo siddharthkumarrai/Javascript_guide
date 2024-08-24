@@ -123,6 +123,15 @@ Stack Memory:
 Heap Memory:
     0x001  --->  { email: "siddharthkumarrai777@gmail.com", username: "sidd" }
 
+**STRING**
+```javascript
+     const name = "siddharth"
+     const repoCount = 50
+     console.log(`hello my name is ${name} and my repocount is ${repoCount}
+
+     const gamename = new String("pubg")
+     console.log(gamename[0]); // p
+     console.log(gamename.__proto__);  node {} | browser String {'', anchor: ƒ, at: ƒ, big: ƒ, blink: ƒ, …}
 
 
 
