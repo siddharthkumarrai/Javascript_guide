@@ -36,7 +36,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
 
 
 **CONVERSION**
-```
+```javascript
      let score =                         "77" || "77abc" || null || undefined
      let valueINNumber = Number(score)   ----    --------   ----    ---------
      console.log(valueINNumber)           77  ||   NaN   ||  0   ||   NaN
@@ -50,7 +50,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
 
 +, -, /, *, **, %
 
-```
+```javascript
 console.log(+true);     // 1
 console.log(true+);     // error
 console.log(+"");       // 0
@@ -59,7 +59,7 @@ console.log(+"");       // 0
 **COMPARISON**
 
  <, >, <=, >=, ==, !=
-```
+```javascript
 console.log("2">1);          //true
 console.log("02">1);         //true
 console.log(null>0);         //false
