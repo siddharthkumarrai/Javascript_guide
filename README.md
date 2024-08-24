@@ -12,6 +12,7 @@ iii) var
 
 >[!IMPORTANT]
 >"use strict"; &nbsp; &nbsp;    (*treat all js code as a new version*)
+>
 > alert(3+3)   &nbsp; &nbsp;     (*ERROR, we are using nodejs,not browser*)
 
 
