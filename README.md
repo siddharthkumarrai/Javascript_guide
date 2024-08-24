@@ -125,6 +125,11 @@ Heap Memory:
 ```
 ```mermaid
 graph TD;
+    userTwo-->userOne-->myName_(copy myName ki)-->anotherName-->myName; stack
+```
+```
+```mermaid
+graph TD;
     userTwo-->userOne-->myName_(copy myName ki)-->anotherName-->myName;
 ```
 
