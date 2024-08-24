@@ -125,10 +125,7 @@ Heap Memory:
 ```
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    userTwo-->userOne-->myName-->anotherName-->myName;
 ```
 
 
