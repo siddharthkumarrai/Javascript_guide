@@ -10,8 +10,6 @@ iii) var
 > [!WARNING]
 >prefer not to use var because of issue in block scope and functional scope
 
-*important point*
-
-- "use strict";  (*treat all js code as a new version*)
-
-- alert(3+3)     (*ERROR, we are using nodejs,not browser*)
+>[!IMPORTANT]
+>"use strict";  (*treat all js code as a new version*)
+> alert(3+3)     (*ERROR, we are using nodejs,not browser*)
