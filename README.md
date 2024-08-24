@@ -1,4 +1,4 @@
-#**JAVASCRIPT NOTES**
+# JAVASCRIPT NOTES
 
 **VARIABLE**
 
@@ -71,7 +71,7 @@ console.log(undefined>=0);   //false
 ```
 === strict check
 
-# Stack and Heap Memory Allocation in JavaScript
+**Stack and Heap Memory Allocation in JavaScript**
 
 The following code demonstrates how variables and objects are stored in the stack and heap memory in JavaScript.
 
@@ -92,6 +92,7 @@ console.log(userOne.email); // Output: siddharthkumarrai777@gmail.com
 console.log(userTwo.email); // Output: siddharthkumarrai777@gmail.com
 
 Stack and Heap Memory Diagram
+
 Stack Memory:
 Primitive values (like strings and numbers) and references to objects are stored in the stack memory.
 
@@ -112,6 +113,16 @@ Heap Memory:
 | Address       | Object                               |
 | ------------- | ------------------------------------ |
 | 0x001         | { email: "siddharthkumarrai777@gmail.com", username: "sidd" } |
+
+Link Between Stack and Heap:
+
+Stack Memory:
+    | userOne  | ---> Reference to Heap (0x001) 
+    | userTwo  | ---> Reference to Heap (0x001)
+
+Heap Memory:
+    0x001  --->  { email: "siddharthkumarrai777@gmail.com", username: "sidd" }
+
 
 
 
