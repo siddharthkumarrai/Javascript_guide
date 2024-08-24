@@ -31,7 +31,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
 
 1. Non Primitive (Reference)  (call by value ( call karn pr copy milti hain))
      - Object      &nbsp; &nbsp; &nbsp; **typeof --> object
-     - Array       &nbsp; &nbsp; &nbsp; **typeof --> object
+     - Array       &nbsp; &nbsp; &nbsp; &nbsp; **typeof --> object
      - Function    &nbsp; &nbsp; **typeof --> function
   
 
