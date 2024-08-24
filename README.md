@@ -134,6 +134,12 @@ Heap Memory:
      console.log(gamename[0]); // p
      console.log(gamename.__proto__);  node {} | browser String {'', anchor: ƒ, at: ƒ, big: ƒ, blink: ƒ, …}
 
+     1. String Key Concepts 
+     - String Properties:
+        let str = "Hello";
+        console.log(str.length);  // Output: 5
+
+
 ```
 
 
