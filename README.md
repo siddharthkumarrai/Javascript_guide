@@ -94,24 +94,30 @@ console.log(userTwo.email); // Output: siddharthkumarrai777@gmail.com
 Stack and Heap Memory Diagram
 
 Stack Memory:
-Primitive values (like strings and numbers) and references to objects are stored in the stack memory.
+Primitive(copy) values (like strings and numbers) and references to objects are stored in the stack memory.
 
 Stack Memory:
+```mermaid
+graph TD;
+     -->userTwo;
+    userOne-->myName;
+    anothername-->myName;
+```
 
-| Variable      | Value                                |
-| ------------- | ------------------------------------ |
-| myName        | "siddharth" (string)                 |
-| anotherName   | "skr" (string)                       |
-| userOne       | Reference to { email: ..., username: ... } |
-| userTwo       | Reference to { email: ..., username: ... } |
+| Variable      | Value                                      |                              
+| ------------- | -------------------------------------------|
+| myName        | "siddharth" (string)                       |
+| anotherName   | "skr" (string)                             |
+| userOne       | points to the object in the heap.          |
+| userTwo       | points to the same object in the heap.     |
 
 Heap Memory:
 Non Primitive (References) Objects and complex data structures are stored in the heap memory.
 
 Heap Memory:
 
-| Address       | Object                               |
-| ------------- | ------------------------------------ |
+| Address       | Object                                                        |
+| ------------- | --------------------------------------------------------------|
 | 0x001         | { email: "siddharthkumarrai777@gmail.com", username: "sidd" } |
 
 Link Between Stack and Heap:
