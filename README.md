@@ -99,9 +99,10 @@ Primitive(copy) values (like strings and numbers) and references to objects are 
 Stack Memory:
 ```mermaid
 graph TD;
-     -->userTwo;
-    userOne-->myName;
-    anothername-->myName;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
 ```
 
 | Variable      | Value                                      |                              
