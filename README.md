@@ -106,7 +106,7 @@ Stack Memory:
 | userTwo       | Reference to { email: ..., username: ... } |
 
 Heap Memory:
-Objects and complex data structures are stored in the heap memory.
+Non Primitive (References) Objects and complex data structures are stored in the heap memory.
 
 Heap Memory:
 
