@@ -71,7 +71,7 @@ console.log(undefined>=0);   //false
 ```
 === strict check
 
-**Stack and Heap Memory Allocation in JavaScript**
+**STACK AND HEAP MEMORY ALLOCATION IN JAVASCRIPT**
 
 The following code demonstrates how variables and objects are stored in the stack and heap memory in JavaScript.
 
@@ -122,13 +122,7 @@ Stack Memory:
 
 Heap Memory:
     0x001  --->  { email: "siddharthkumarrai777@gmail.com", username: "sidd" }
-```
-```mermaid
-graph TD;
-    stck
-     userTwo-->userOne-->myName_(copy myName ki)-->anotherName-->myName;
-```
-```
+
 
 
 
