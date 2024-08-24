@@ -24,14 +24,14 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      - Bigint      --> ```const num = 123456789n```
      - Boolean     --> true/false
      - String      --> ""
-     - Null        --> standalone value
-     - Undefined
+     - Null        --> standalone value       **typeof -->object
+     - Undefined                              **typeof --> undefined
      - Symbol      --> unique
 
 1. Non Primitive (Reference)  (call by value ( call karn pr copy milti hain))
-     - Object
-     - Array
-     - Function
+     - Object       **typeof --> object
+     - Array        **typeof --> object
+     - Function     **typeof --> function
   
 
 
