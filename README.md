@@ -126,7 +126,6 @@ Heap Memory:
 ```mermaid
 graph TD;
     stck
-     Reference to Heap (0x001)-->userTwo
      userTwo-->userOne-->myName_(copy myName ki)-->anotherName-->myName;
 ```
 ```
