@@ -125,7 +125,7 @@ Heap Memory:
 ```
 ```mermaid
 graph TD;
-    userTwo-->userOne-->myNameCopy-->anotherName-->myName;
+    userTwo-->userOne-->myName_(Copy niche wale ki)-->anotherName-->myName;
 ```
 
 
