@@ -11,9 +11,7 @@ iii) var
 > prefer not to use var because of issue in block scope and functional scope
 
 >[!IMPORTANT]
-
 >"use strict"; &nbsp; &nbsp;    (*treat all js code as a new version*)
-
 > alert(3+3)   &nbsp; &nbsp;     (*ERROR, we are using nodejs,not browser*)
 
 
