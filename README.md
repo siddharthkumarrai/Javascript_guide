@@ -38,7 +38,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
 ```
      let score =                         "77" // "77abc" // null // undefined
      let valueINNumber = Number(score)
-     console.log(valueINNumber)     //77 //NaN // 0 // NaN
+     console.log(valueINNumber)           77 //NaN // 0 // NaN
 ```
 
 
