@@ -36,9 +36,9 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
 
 **CONVERSION**
 ```
-     let score =                         "77" // "77abc" // null // undefined
-     let valueINNumber = Number(score)
-     console.log(valueINNumber)           77  //   NaN   //  0   // NaN
+     let score =                         "77" || "77abc" || null || undefined
+     let valueINNumber = Number(score)          --------    ----    ---------
+     console.log(valueINNumber)           77  ||   NaN   ||  0   || NaN
 ```
 
 
