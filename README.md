@@ -151,22 +151,12 @@ Heap Memory:
          console.log(str.toUpperCase());     // Output: 'HELLO WORLD'
          console.log(str.replace('H', 'J')); // Output: 'Jello World'
          console.log(sentence.split(' '));   // Output: ['Hello', 'World']
-         console.log(str.trim());  // Output: 'HelloWorld'
+         console.log(str.trim());            // Output: 'HelloWorld'
 
        - Immutable Strings:
            let str = "Hello";
            str[0] = "J";  // Does nothing
            console.log(str);  // Output: 'Hello'
-
-
-         
- 
-
-
-
-
-
-
 ```
 
 
