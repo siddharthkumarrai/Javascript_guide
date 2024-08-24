@@ -97,13 +97,6 @@ Stack Memory:
 Primitive(copy) values (like strings and numbers) and references to objects are stored in the stack memory.
 
 Stack Memory:
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
 
 | Variable      | Value                                      |                              
 | ------------- | -------------------------------------------|
@@ -129,6 +122,14 @@ Stack Memory:
 
 Heap Memory:
     0x001  --->  { email: "siddharthkumarrai777@gmail.com", username: "sidd" }
+```
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
 
 
 
