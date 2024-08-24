@@ -13,7 +13,7 @@ iii) var
 >[!IMPORTANT]
 >"use strict"; &nbsp; &nbsp;    (*treat all js code as a new version*)
 >
-> alert(3+3)   &nbsp; &nbsp;     (*ERROR, we are using nodejs,not browser*)
+> alert(3+3)   &nbsp; &nbsp;  &nbsp;    (*ERROR, we are using nodejs,not browser*)
 
 
 **DATATYPE**   (kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain)
