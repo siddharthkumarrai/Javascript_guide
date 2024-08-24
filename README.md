@@ -16,7 +16,7 @@ iii) var
 > alert(3+3)   &nbsp; &nbsp;  &nbsp;    (*ERROR, we are using nodejs,not browser*)
 
 
- ## DATATYPE  &nbsp;  &nbsp; (kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain)
+ ## DATATYPE  &nbsp;  &nbsp; (**_kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain_**)
 
 EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards/standards/ecma-262/).
 
