@@ -18,8 +18,8 @@ iii) var
 
 
 **DATATYPE**   (kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain)
-1. Primitive  (call by value)
-     - Number       -->
+1. Primitive  (call by value ( call karn pr copy milti hain))
+     - Number       --> range 2(n<sup>53</sup>)
      - Bigint      --> ```const num = 123456789n```
      - Boolean     --> true/false
      - String      --> ""
