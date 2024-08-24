@@ -12,6 +12,6 @@ iii) var
 
 >[!IMPORTANT]
 >
->"use strict";  (*treat all js code as a new version*)
+>"use strict";    (*treat all js code as a new version*)
 >
-> alert(3+3)     (*ERROR, we are using nodejs,not browser*)
+> alert(3+3)      (*ERROR, we are using nodejs,not browser*)
