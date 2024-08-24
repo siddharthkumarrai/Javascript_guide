@@ -34,6 +34,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      - Array       &nbsp; &nbsp; &nbsp; &nbsp; **typeof --> object
      - Function    &nbsp; &nbsp; **typeof --> function
 
+
 **CONVERSION**
 ```
      let score =                         "77" || "77abc" || null || undefined
