@@ -126,7 +126,7 @@ Heap Memory:
 ```mermaid
 graph TD;
     stck
-     userTwo-->userOne-->myName_(copy myName ki)-->anotherName-->myName; heap let userOne= {email:"sidd@gmail.com",username:"sidd"} let userTwo = userOne
+     userTwo-->userOne-->myName_(copy myName ki)-->anotherName-->myName; ```heap let userOne= {email:"sidd@gmail.com",username:"sidd"} let userTwo = userOne```
 ```
 ```
 
