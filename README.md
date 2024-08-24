@@ -153,7 +153,7 @@ Heap Memory:
          console.log(sentence.split(' '));   // Output: ['Hello', 'World']
          console.log(str.trim());            // Output: 'HelloWorld'
 
-       - Immutable Strings:
+       - String are Immutable:
            let str = "Hello";
            str[0] = "J";  // Does nothing
            console.log(str);  // Output: 'Hello'
