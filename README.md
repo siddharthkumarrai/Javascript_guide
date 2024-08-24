@@ -18,7 +18,7 @@ iii) var
 
 
 **DATATYPE**   (kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain)
-EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards/standards/ecma-262/)).
+EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards/standards/ecma-262/).
 1. Primitive  (call by value ( call karn pr copy milti hain))
      - Number       --> range (2<sup>53</sup>)
      - Bigint      --> ```const num = 123456789n```
