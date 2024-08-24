@@ -30,8 +30,8 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      - Symbol      --> unique
 
 1. Non Primitive (Reference)  (call by value ( call karn pr copy milti hain))
-     - Object      &nbsp; &nbsp; **typeof --> object
-     - Array       &nbsp; &nbsp; **typeof --> object
+     - Object      &nbsp; &nbsp; &nbsp; **typeof --> object
+     - Array       &nbsp; &nbsp; &nbsp; **typeof --> object
      - Function    &nbsp; &nbsp; **typeof --> function
   
 
