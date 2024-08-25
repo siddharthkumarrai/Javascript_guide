@@ -302,6 +302,37 @@ Heap Memory:
   let three = 300
   console.log(Array.of(one,two,three))                   // [ 100, 200, 300 ]
 ```
+## OBJECTS
+
+   - singleton  (constructor se humesa singleton banega)
+        Object.create()
+
+   - object literals (literal se humesa singleton bnega)
+     
+        const mySym = Symbol("key1")
+        const jsUser = {
+                name: "siddharth",
+                age: 19,
+                location: "delhi",
+                email: "sidd@gmail.com",
+                isLoggdIn: false,
+                lastLoginDays: ["monday","saturday"],
+                "full Name": "siddharth kumar rai",
+                [mySym]: "mykey1"
+        }
+
+        console.log(jsUser.email)         // sidd@gmail.com
+        console.log(jsUser["email"])      // sidd@gmail.com
+        console.log(jsUser["full Name"])  // siddharth kumar rai
+        console.log(jsUser[mySym])        // mykey1
+
+        Object.freeze(jsUser)            // object ki property and method ko change nahi karne dega
+
+        jsUser.greeting = function hello() {
+            console.log(`hello ${this.name}`);
+        }
+        jsUser.greeting()  // hello siddharth
+      
   
   
   
