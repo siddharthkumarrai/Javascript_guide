@@ -178,9 +178,9 @@ Heap Memory:
 
     - Checking if values are finite, integers, or NaN
 
-     console.log(Number.isFinite(balance));    // true
-     console.log(Number.isInteger(balance));   // true
-     console.log(Number.isNaN(balance));       `//false
+      console.log(Number.isFinite(balance));    // true
+      console.log(Number.isInteger(balance));   // true
+      console.log(Number.isNaN(balance));       //false
 ```
 
 
