@@ -283,21 +283,24 @@ Heap Memory:
   const marvel_heros = ["thor","ironman","spider"]
   const dc_heros = ["super","flash","batman"]
 
-  marvel_heros.push(dc_heros)      // return size 4
-  console.log(marvel_heros)        // [ 'thor', 'ironman', 'spider', [ 'super', 'flash', 'batman' ] ]
-  console.log(dc_heros)            // [ 'super', 'flash', 'batman' ]
+  marvel_heros.push(dc_heros)                           // return size 4
+  console.log(marvel_heros)                             // [ 'thor', 'ironman', 'spider', [ 'super', 'flash', 'batman' ] ]
+  console.log(dc_heros)                                 // [ 'super', 'flash', 'batman' ]
 
   const all_heros = marvel_heros.concat(dc_heros);      // return : [ 'thor', 'ironman', 'spider', 'super', 'flash', 'batman' ]
   const all_new_heros = [...marvel_heros, ...dc_heros]  // return : [ 'thor', 'ironman', 'spider', 'super', 'flash', 'batman' ]
 
-  console.log(Array.isArray("siddharth"))                  // false
-  console.log(Array.from("siddharth"))                     // ['s', 'i', 'd', 'd', 'h', 'a', 'r', 't', 'h']
-  console.log(Array.from({name: "siddharth"}))             // []
+  const anotherArr = [1,2,3,[4,5,6],7,[6,7[4,5]]]
+  const real_anotherArr = anotherArr.flat(Infinity)     // return : [ 1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]
+
+  console.log(Array.isArray("siddharth"))               // false
+  console.log(Array.from("siddharth"))                  // ['s', 'i', 'd', 'd', 'h', 'a', 'r', 't', 'h']
+  console.log(Array.from({name: "siddharth"}))          // []
 
   let one = 100
   let two = 200
   let three = 300
-  console.log(Array.of(one,two,three))                     // [ 100, 200, 300 ]
+  console.log(Array.of(one,two,three))                   // [ 100, 200, 300 ]
 ```
   
   
