@@ -329,9 +329,9 @@ Heap Memory:
         jsUser.greeting = function hello() {
             console.log(`hello ${this.name}`);
         }
-        jsUser.greeting()                  // hello siddharth
+        jsUser.greeting()                 // hello siddharth
 
-        Object.freeze(jsUser)            // object ki property and method ko change nahi karne dega
+        Object.freeze(jsUser)             // object ki property and method ko change nahi karne dega
 
 ```
 
