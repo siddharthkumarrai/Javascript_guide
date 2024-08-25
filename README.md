@@ -348,6 +348,12 @@ Heap Memory:
        const obj3 = Object.assign({},obj1,obj2)           // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }  (**agar {} ye nahi dete to sri value obj1 mein ja rahi hain)
        const obj3 = {...obj1, ...obj2}                    // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 
+     - DeStructuring
+       const {name} = jsUser
+       console.log(name)                                  // siddharth
+       const {name: fullName} = jsUser
+       console.log(fullName)                              // siddharth           
+
 ```
 
 
