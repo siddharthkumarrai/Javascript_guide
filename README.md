@@ -228,6 +228,81 @@ Heap Memory:
    newDate.toLocaleString('default',{weekday: "long"})
 
 ```
+## ARRAYS
+```javascript
+   const myArr = [0,1,23,true,"sidd",null,undefined]
+   const myArr2 = new Array(0,1,2,3,4,5)
+   console.log(myArr2)                    // [ 0, 1, 2, 3, 4, 5 ]
+
+ - Adding/Removing Elements (Mutation method)
+
+   myArr2.push(6)                         // [ 0, 1, 2, 3, 4, 5, 6]
+   myArr2.pop()                           // [ 0, 1, 2, 3, 4, 5 ]
+   myArr2.unshift(9)                      // [ 9, 0, 1, 2, 3, 4, 5 ]
+   myArr2.shift()                         // [ 0, 1, 2, 3, 4, 5 ]
+
+- Accessing Elements
+
+  myArr2.indexOf(2));                     // Output: 2  (not found -1)
+  myArr2.lastIndexOf(2));                 // Output: 2
+  myArr2.includes(9)                      // output: false
+
+- Manipulating Elements
+
+   const myArr2 = new Array(0,1,2,3,4,5)
+   console.log(myArr2)                    // [ 0, 1, 2, 3, 4, 5 ]
+
+   myArr2.splice(1(start_index),2(how many remove),4(which element you want add))   // return [ 1, 2 ]             // original array [ 0, 4, 3, 4, 5 ]
+
+   console.log([1, 2, 3].reverse());              // Output: [3, 2, 1]
+   console.log([3, 2, 1].sort());                 // Output: [1, 2, 3]
+   console.log([1, 2, 3].fill(4));                // Output: [4, 4, 4]
+   console.log([1, 2, 3, 4, 5].copyWithin(0, 3)); // Output: [4, 5, 3, 4, 5]
+
+   copyWithin(0, 3) ka matlab hai:
+   - Target: 0 (ye woh index hai jahan par elements ko paste karna hai)
+   - Start: 3 (ye woh index hai jahan se elements ko copy karna hai)
+   - end (optional): Ye woh index hai jahan tak elements ko copy karna hai. Agar end nahi diya jaye, toh array ke last element tak copy hoga.
+
+- String Conversion
+
+  myArr2.join("-");                       // Output: "0-1-2-3-4-5"
+
+- Iteration
+
+  const myArr2 = new Array(0,1,2,3,4,5)
+  console.log(myArr2)                                // [ 0, 1, 2, 3, 4, 5 ]
+
+  myArr2.forEach((element) => console.log(element)); // Output: 0, 1, 2, 3, 4, 5
+  myArr2.map((element) => element * 2))              // Output: 0, 2, 4, 6, 8, 10
+  myArr2.filter((element) => element > 1));          // Output: [2, 3, 4, 5]
+  myArr2.reduce((acc, element) => acc + element));   // Output: 15
+
+- ADVANCED CONCEPT
+
+  const marvel_heros = ["thor","ironman","spider"]
+  const dc_heros = ["super","flash","batman"]
+
+  marvel_heros.push(dc_heros)      // return size 4
+  console.log(marvel_heros)        // [ 'thor', 'ironman', 'spider', [ 'super', 'flash', 'batman' ] ]
+  console.log(dc_heros)            // [ 'super', 'flash', 'batman' ]
+
+  const all_heros = marvel_heros.concat(dc_heros);      // return : [ 'thor', 'ironman', 'spider', 'super', 'flash', 'batman' ]
+  const all_new_heros = [...marvel_heros, ...dc_heros]  // return : [ 'thor', 'ironman', 'spider', 'super', 'flash', 'batman' ]
+
+  console.log(Array.isArray("siddharth"))                  // false
+  console.log(Array.from("siddharth"))                     // ['s', 'i', 'd', 'd', 'h', 'a', 'r', 't', 'h']
+  console.log(Array.from({name: "siddharth"}))             // []
+
+  let one = 100
+  let two = 200
+  let three = 300
+  console.log(Array.of(one,two,three))                     // [ 100, 200, 300 ]
+```
+  
+  
+  
+
 
    
 
