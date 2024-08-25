@@ -262,7 +262,7 @@ Heap Memory:
    copyWithin(0, 3) ka matlab hai:
    - Target: 0 (ye woh index hai jahan par elements ko paste karna hai)
    - Start: 3 (ye woh index hai jahan se elements ko copy karna hai)
-   - end (optional): Ye woh index hai jahan tak elements ko copy karna hai. Agar end nahi diya jaye, toh array ke last element tak copy hoga.
+   - End (optional): Ye woh index hai jahan tak elements ko copy karna hai. Agar end nahi diya jaye, toh array ke last element tak copy hoga.
 
 - String Conversion
 
