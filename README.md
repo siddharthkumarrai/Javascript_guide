@@ -158,7 +158,7 @@ Heap Memory:
            str[0] = "J";      // Does nothing
            console.log(str);  // Output: 'Hello World'
 ```
-## NUMBWERS
+## NUMBERS
 ```javascript
     
     const score = 400
