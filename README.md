@@ -323,29 +323,30 @@ Heap Memory:
                 [mySym]: "mykey1"
         }
 
-        console.log(jsUser.email)               // sidd@gmail.com
-        console.log(jsUser["email"])            // sidd@gmail.com
-        console.log(jsUser["full Name"])        // siddharth kumar rai
-        console.log(jsUser[mySym])              // mykey1
-        console.log(Object.keys(jsUser))        // ['name', 'age', 'location', 'email', 'isLoggdIn', 'lastLoginDays', 'full Name']
-        console.log(Object.values(jsUser))      // ['siddharth',19,'delhi','sidd@gmail.com',false,[ 'monday', 'saturday' ],'siddharth kumar rai']
-        console.log(Object.entries(jsUser))     // [[ 'name', 'siddharth' ],[ 'age', 19 ],[ 'location', 'delhi' ],[ 'email', 'sidd@gmail.com' ],[ 'isLoggdIn', false ],
-                                                  [ 'lastLoginDays', [ 'monday', 'saturday' ] ],[ 'full Name', 'siddharth kumar rai' ]]
+        console.log(jsUser.email)                       // sidd@gmail.com
+        console.log(jsUser["email"])                    // sidd@gmail.com
+        console.log(jsUser["full Name"])                // siddharth kumar rai
+        console.log(jsUser[mySym])                      // mykey1
+        console.log(Object.keys(jsUser))                // ['name', 'age', 'location', 'email', 'isLoggdIn', 'lastLoginDays', 'full Name']
+        console.log(Object.values(jsUser))              // ['siddharth',19,'delhi','sidd@gmail.com',false,[ 'monday', 'saturday' ],'siddharth kumar rai']
+        console.log(Object.entries(jsUser))             // [[ 'name', 'siddharth' ],[ 'age', 19 ],[ 'location', 'delhi' ],[ 'email', 'sidd@gmail.com' ],[ 'isLoggdIn', false ],
+                                                            [ 'lastLoginDays', [ 'monday', 'saturday' ] ],[ 'full Name', 'siddharth kumar rai' ]]
+        console.log(jsUser.hasOwnProperty("isLoggedIn") // true
 
         jsUser.greeting = function hello() {
             console.log(`hello ${this.name}`);
         }
-        jsUser.greeting()                        // hello siddharth
+        jsUser.greeting()                                // hello siddharth
 
-        Object.freeze(jsUser)                    // object ki property and method ko change nahi karne dega
+        Object.freeze(jsUser)                            // object ki property and method ko change nahi karne dega
 
        const obj1 = {1:"a", 2:"b"}
        const obj2 = {3:"a", 4:"b"}
        const obj3 = {obj1,obj2}
-       console.log(obj3)                         // { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
+       console.log(obj3)                                  // { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
 
-       const obj3 = Object.assign({},obj1,obj2)  // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }  (**agar {} ye nahi dete to sri value obj1 mein ja rahi hain)
-       const obj3 = {...obj1, ...obj2}           // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+       const obj3 = Object.assign({},obj1,obj2)           // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }  (**agar {} ye nahi dete to sri value obj1 mein ja rahi hain)
+       const obj3 = {...obj1, ...obj2}                    // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 
 ```
 
