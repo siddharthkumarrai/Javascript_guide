@@ -303,7 +303,7 @@ Heap Memory:
   console.log(Array.of(one,two,three))                   // [ 100, 200, 300 ]
 ```
 ## OBJECTS
-
+```javascript
    - singleton  (constructor se humesa singleton banega)
         Object.create()
 
@@ -326,26 +326,17 @@ Heap Memory:
         console.log(jsUser["full Name"])  // siddharth kumar rai
         console.log(jsUser[mySym])        // mykey1
 
-        Object.freeze(jsUser)            // object ki property and method ko change nahi karne dega
-
         jsUser.greeting = function hello() {
             console.log(`hello ${this.name}`);
         }
-        jsUser.greeting()  // hello siddharth
+        jsUser.greeting()                  // hello siddharth
+
+        Object.freeze(jsUser)            // object ki property and method ko change nahi karne dega
+
+```
+
+
+
       
   
   
-  
-
-
-   
-
-
-
-
-
-  
-
-
-
-
