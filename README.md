@@ -182,6 +182,26 @@ Heap Memory:
       console.log(Number.isInteger(balance));   // true
       console.log(Number.isNaN(balance));       //false
 ```
+## MATHS
+```javascript
+      console.log(Math);          // node Object [Math] {}  // browser Math {abs: ƒ, acos: ƒ, acosh: ƒ, asin: ƒ, asinh: ƒ, …}
+
+      console.log(Math.abs(-4));    //  4
+      console.log(Math.round(4.6))  //  5
+      console.log(Math.ceil(4.2))   //  5
+      console.log(Math.floor(4.9))  //  4
+      console.log(Math.min(4,3,7))  //  3
+      console.log(Math.max(7,9,2))  //  9
+
+      console.log(Math.random())    //  return random number between 0 and 1
+      console.log(Math.random()*10)
+      console.log((Math.random()*10)+1)
+      console.log(Math.floor(Math.ramdom()*10)+1))
+
+      const min = 10
+      const max = 20
+      Math.floor(Math.random()*(max-min+1))+min
+```
 
 
 
