@@ -158,8 +158,30 @@ Heap Memory:
            str[0] = "J";      // Does nothing
            console.log(str);  // Output: 'Hello World'
 ```
+## NUMBWERS
+```javascript
+    
+    const score = 400
+    console.log(score) //400   **typeof number
+
+    const balance = new Number(100)
+    console.log(balance)   // node [Number: 400]  // browser Number {400} [[Prototype]]: Number [[PrimitiveValue]]: 400
 
 
+    - Numbers Methods:
+
+      console.log(balance.toString().length);       // 3
+      console.log(balance.toFixed(2));              // 100.00
+      console.log(balance.toPrecision(4));          // "100.0"
+      console.log(balance.toLocaleString("en-IN")); // 10,000
+      console.log(balance.toExponential(1));        // "1.0e+2"
+
+    - Checking if values are finite, integers, or NaN
+
+     console.log(Number.isFinite(balance));    // true
+     console.log(Number.isInteger(balance));   // true
+     console.log(Number.isNaN(balance));       `//false
+```
 
 
 
