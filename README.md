@@ -493,6 +493,22 @@ Heap Memory:
   console.log(`DB CONNECTED`)
 })();
 ```
+## JAVASCRIPT_EXECUTION_CONTEXT
+
+   { } ----> Global Execution Context (refer this)
+
+> In Javascript 3 types of Execution Context
+   - Global Execution Context
+   - Function Execution Context
+   - Eval Execution Context
+
+> The Execution Context Done In Two Phase
+   - Memory Creation Phase
+   - Execution Phase
+
+
+
+  
   
 
 
