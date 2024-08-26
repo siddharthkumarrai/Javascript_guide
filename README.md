@@ -455,9 +455,9 @@ Heap Memory:
    }
 ```
 >[!IMPORTANT]
-> {} &nbsp; &nbsp;   <--------- likha to return likhna padega
+> { } &nbsp; &nbsp;   <--------- likha to return likhna padega
 >
-> () &nbsp; &nbsp;  <---------- return nahi likna padega  
+> ( ) &nbsp; &nbsp;  <---------- return nahi likna padega  
 
 
       
