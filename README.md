@@ -481,6 +481,14 @@ Heap Memory:
    const addTwo = (num1,num2) => ({user: "sidd"})
    console.log(addTwo(5,6))                            // { user: 'sidd' }
 ```
+## IMMEDIATELY_INVOKED_FUNCTION_EXPRESSION (IIFE)
+```JAVASCRIPT
+(Function sidd(){
+       console.log(`DB CONNECTED`)
+}} ();
+
+
+```
   
 
 
