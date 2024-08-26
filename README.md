@@ -29,7 +29,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      - Undefined      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **typeof --> undefined
      - Symbol      --> unique
 
-1. Non Primitive (Reference)  (call by value ( call karn pr copy milti hain))
+1. Non Primitive (Reference)  (call by reference ( call karn pr address milta hain))
      - Object      &nbsp; &nbsp; &nbsp; **typeof --> object
      - Array       &nbsp; &nbsp; &nbsp; &nbsp; **typeof --> object
      - Function    &nbsp; &nbsp; **typeof --> function
@@ -355,6 +355,78 @@ Heap Memory:
        console.log(fullName)                              // siddharth           
 
 ```
+## FUNCTION
+```javascript
+
+   function addTwoNumber(number1,number2){                // number1 and number2 are parameter  (function defination)
+        console.log(number1+number2)
+   }
+
+   addTwoNumber(3,4)                                      // 3,4 are argument  (function call)
+
+   function loginUserMessage(username){
+        return `${username} Just loggedin`
+   }
+   console.log(loginUserMessage("siddharth"))            // siddharth Just loggedin
+
+  function calculateCartPrice(num1){
+       return num1
+  }
+  console.log(calculateCartPrice(200))                   // 200
+
+  function calculateCartPrice(...num1){                  // ...num1 is parameter ko rest bolte hain
+      return num1
+  }
+  console.log(calculateCartPrice(200,500,700))           // [200,500,700]
+
+  const jsUser = {
+         username: "siddharth"
+  }
+  function handelObject(someobj){
+       console.log(someobj.username)
+  }
+  handelObject(jsUser)                                    // siddharth
+
+```
+## SCOPE
+```javascript
+   node -----> global scope {}
+   browser --> global scope window{}
+
+   if(true){
+       let a = 10
+       const b = 20
+       var c = 30
+   }
+   console.log(a)    // a is not defined
+   console.log(b)    // b is not defined
+   console.log(c)    // c is not defined
+
+   - Nested Scope
+   Closer --> ander ka function bhar ke function ke variable ko access kar pata hain
+
+   function one(){
+        const username = "siddharth"
+        function two(){
+             const website = "https:github.com"
+             console.log(username)                  // siddharth
+        }
+        console.log(website);                       // ERROR : website is not defined
+
+        two()
+   }
+   one()
+
+   console.log(addOne(5))                                  // 6
+   function addOne(num){
+       return num+1
+   }
+
+   console.log(addTwo(5)                                  // Error : can't access 'addTwo' before initialize 
+   const addTwo = function(num)                           // function expression
+       return num+2
+   }
+   
 
 
 
