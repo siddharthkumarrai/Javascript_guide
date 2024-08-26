@@ -502,7 +502,8 @@ Heap Memory:
    - Function Execution Context
    - Eval Execution Context
 
-> The Execution Context Done In Two Phase
+> The Execution Context Done In Three Phase
+   - Global Execution (refer this)
    - Memory Creation Phase
    - Execution Phase
 
