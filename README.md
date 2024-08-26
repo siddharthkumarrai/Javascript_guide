@@ -483,11 +483,15 @@ Heap Memory:
 ```
 ## IMMEDIATELY_INVOKED_FUNCTION_EXPRESSION (IIFE)
 ```JAVASCRIPT
+- Named IIFE
 (Function sidd(){
        console.log(`DB CONNECTED`)
-}} ();
+}} ();                                                 // ; semicolon lagana mandatory hain
 
-
+- Without Named IIFE
+(()=>{
+  console.log(`DB CONNECTED`)
+})();
 ```
   
 
