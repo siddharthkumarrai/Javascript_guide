@@ -453,6 +453,11 @@ Heap Memory:
       console.log(this.username}                            // undefined
       console.log(this)                                     // {}
    }
+```
+>[!IMPORTANT]
+> {} &nbsp; &nbsp;   <--------- likha to return likhna padega
+>
+> () &nbsp; &nbsp;  <---------- return nahi likna padega  
 
 
       
