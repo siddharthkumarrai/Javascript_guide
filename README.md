@@ -426,8 +426,33 @@ Heap Memory:
    const addTwo = function(num)                           // function expression
        return num+2
    }
-   
 
+   - Arrow Function
+     const user = {
+            username: "siddharth kumar rai",
+            welcomeMessage: function(){
+                  console.log(`${this.username},welcome`);  
+            }
+            console.log(this)                               // { username: 'siddharth kumar rai', welcomeMessage: [Function: welcomeMessage] }
+    }
+    user.welcomeMessage()                                   // siddharth kumar rai,welcome
+    user.username = "sidd
+    user.welcomeMessage()                                   // sidd,welcome
+
+    console.log(this)                                       // node empty {}  // browser global object window object
+
+    function sidd(){
+        let username = "siddharth"
+        console.log(this.username);                         // undefined
+        console.log(this)                                   // <ref *1> Object [global] {etc.}
+   }
+   sidd()
+
+   const sidd = ()=>{
+      let username = "siddharth",
+      console.log(this.username}                            // undefined
+      console.log(this)                                     // {}
+   }
 
 
       
