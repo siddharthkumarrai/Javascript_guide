@@ -457,7 +457,20 @@ Heap Memory:
 >[!IMPORTANT]
 > { } &nbsp; &nbsp;   <--------- likha to return likhna padega
 >
-> ( ) &nbsp; &nbsp;  <---------- return nahi likna padega  
+> ( ) &nbsp; &nbsp;  <---------- return nahi likna padega
+
+> Explicit and Implicit return
+- Explicit Return
+
+  const addTwo = (num1,num2) => {
+         return num1+num2
+  }
+  console.log(addTwo(3,4))   // 7
+
+ - Implicit Return
+    const addTwo = (num1,num2) => num1 + num2
+                               => (num1 + num2)
+  
 
 
       
