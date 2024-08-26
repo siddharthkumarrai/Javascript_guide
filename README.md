@@ -509,6 +509,25 @@ Heap Memory:
 
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/w_500,ar_1:1,c_fill,g_auto,e_art:hokusai/v1724688567/WhatsApp_Image_2024-08-26_at_9.24.11_PM_vverst.jpg)
 
+> Test it yourself in the browser
+  - Browser --> source --> +New Snippet(click) make script.js
+    ```javascript
+       script.js
+       function one(){
+            console.log("one")       // add break point
+       }
+    
+       function two(){
+            console.log("one")      // add break point
+       }
+    
+       function three(){
+            console.log("one")      // add break point
+       }
+       one()
+       two()
+       three()
+
 
 
   
