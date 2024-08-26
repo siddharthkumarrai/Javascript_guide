@@ -506,7 +506,7 @@ Heap Memory:
    - Memory Creation Phase
    - Execution Phase
 
-![Alt text]([images/example.png](https://res.cloudinary.com/dnknslaku/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1724688567/WhatsApp_Image_2024-08-26_at_9.24.11_PM_vverst.jpg))
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1724688567/WhatsApp_Image_2024-08-26_at_9.24.11_PM_vverst.jpg)
 
 
 
