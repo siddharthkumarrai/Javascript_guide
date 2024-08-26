@@ -460,27 +460,27 @@ Heap Memory:
 > ( ) &nbsp; &nbsp;  <---------- return nahi likna padega
 
 > Explicit and Implicit return
+
+```javascript
+
 - Explicit Return
 
   const addTwo = (num1,num2) => {
          return num1+num2
   }
-  
   console.log(addTwo(3,4))   // 7
 
  - Implicit Return
 
     const addTwo = (num1,num2) => num1 + num2
-   
                                => (num1 + num2)
 
    const addTwo = (num1,num2) => {user: "sidd"}
-   
    console.log(addTwo(5,6))                            // undefined
    
    const addTwo = (num1,num2) => ({user: "sidd"})
-   
    console.log(addTwo(5,6))                            // { user: 'sidd' }
+```
   
 
 
