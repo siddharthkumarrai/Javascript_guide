@@ -475,8 +475,11 @@ Heap Memory:
                                => (num1 + num2)
 
    const addTwo = (num1,num2) => {user: "sidd"}
+   
    console.log(addTwo(5,6))                            // undefined
+   
    const addTwo = (num1,num2) => ({user: "sidd"})
+   
    console.log(addTwo(5,6))                            // { user: 'sidd' }
   
 
