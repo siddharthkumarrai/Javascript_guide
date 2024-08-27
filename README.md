@@ -545,7 +545,6 @@ Heap Memory:
 ```
 ## CONTROL_FLOW
 
-
 ----------------------------------------------------------------------------------------------------------------------------
 |   if(true){          |  if(false){      |   if(false){                                         |  switch(key) {          |
 |     executes this    |    not execute   |      not execute                                     |     case value :        |
@@ -556,13 +555,14 @@ Heap Memory:
 |                      |                  |   }                                                  |            break;       |
 |                      |                  |                                                      |  }                      |
 ----------------------------------------------------------------------------------------------------------------------------
+** agar break; nahi lgaya to us condition kjha match hogi uske bad sare code execute hoga except default
+** continue jha condition match hui us condition ko skip kar do bas
 
 - truthy values ( "0",'false',"space",[],{},function(){} )
 - falsy values  (false,0,-0,BigInt0n,"",null,undefined,NaN
 
 ## Nullish Coalescing Operator
-
-```javascript
+```javascrip
    let val1;
    val1 = 5??10
    console.log(val1); // 5
@@ -576,6 +576,7 @@ Heap Memory:
    val1 = null??10??15
    console.log(val1)
 ```
+## 
 
 
 
