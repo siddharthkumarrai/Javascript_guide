@@ -561,7 +561,7 @@ Heap Memory:
 - truthy values ( "0",'false',"space",[],{},function(){} )
 - falsy values  (false,0,-0,BigInt0n,"",null,undefined,NaN
 
-## Nullish Coalescing Operator
+## NULLISH COALESCING OPERATOR ?? UNDEFINED / NULL
 ```javascrip
    let val1;
    val1 = 5??10
@@ -576,39 +576,9 @@ Heap Memory:
    val1 = null??10??15
    console.log(val1)
 ```
-## 
-    ```javascript
-       script.js
-       function one(){
-            console.log("one")       // add break point
-       }
-    
-       function two(){
-            console.log("one")      // add break point
-       }
-    
-       function three(){
-            console.log("one")      // add break point
-       }
-       one()
-       two()
-       three()
+## TERNERARY OPERATOR
+**condition ? true : false**
 
-       function one(){
-            console.log("one")       // add break point
-            two()
-       }
-    
-       function two(){
-            console.log("one")      // add break point
-            three()
-       }
-    
-       function three(){
-            console.log("one")      // add break point
-       }
-       one()
-```
 
 
 
