@@ -548,17 +548,17 @@ Heap Memory:
 
 | if                   |  if , else           | if,else if, else                  | switch            |
 |:-------------------- |:-------------------- |:----------------------------------|:------------------|
-| ```javascript        |```javascript         |```javascript                      |```javascript      |
-| if(true){            | if(false){           |   if(false){                      |  switch(key){     |
-|    execute code      |    not execute code  |       not execute code            |     case value:   |
-| }                    | } else {             |   } else if (true){               |           code    |
-| ```                  |      execute this    |        execute code               |           break;  |
-|                      | }                    |   } else {                        |                   |
-|                      | ```                  |         if(false),else if(false), |      default:     |
-|                      |                      |          execute code             |           code    |
-|                      |                      |   }                               |           break;  |
-|                      |                      | ```                               |   }               |
-|                      |                      |                                   |                   |
+| ```javascript         ```javascript          ```javascript                       ```javascript      |
+| if(true){              if(false){               if(false){                         switch(key){     |
+|    execute code           not execute code          not execute code                  case value:   |
+| }                      } else {                 } else if (true){                           code    |
+| ```                         execute this             execute code                           break;  |
+|                      | }                        } else {                                            |
+|                      | ```                            if(false),else if(false),        default:     |
+|                      |                                 execute code                         code    |
+|                      |                          }                                           break;  |
+|                      |                        ```                                   }               |
+|                      |                      |                                   | ```               |
 
 
 ** agar break; nahi lgaya to us condition kjha match hogi uske bad sare code execute hoga except default
