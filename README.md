@@ -546,6 +546,19 @@ Heap Memory:
 ```
 ## CONTROL_FLOW
 
+| if                   |  if , else           | if,else if, else                  | switch            |
+|:--------------------:|:--------------------:|:---------------------------------:|:-----------------:|
+| `if(true){           | `if(false){          |  `if(false){                      | `switch(key){     |
+|    execute code      |    not execute code  |       not execute code            |     case value:   |
+|  }`                  |  } else {            |    } else if (true){              |           code    |
+|                      |      execute this    |        execute code               |           break;  |
+|                      |  }`                  |    } else {                       |                   |
+|                      |                      |         if(false),else if(false), |      default:     |
+|                      |                      |          execute code             |           code    |
+|                      |                      |    }`                             |           break;  |
+|                      |                      |                                   |   }`              |
+
+
 ** agar break; nahi lgaya to us condition kjha match hogi uske bad sare code execute hoga except default
 ** continue jha condition match hui us condition ko skip kar do bas
 
