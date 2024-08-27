@@ -547,7 +547,7 @@ Heap Memory:
 ## CONTROL_FLOW
 
 | if                   |  if , else           | if,else if, else                  | switch               |
-|----------------------|----------------------|-----------------------------------|----------------------|--
+|----------------------|----------------------|-----------------------------------|----------------------|
 | if(true){            |  if(false){          |     if(false){                    |     switch(key){     |
 |    execute code      |     not execute code |         not execute code          |        case value:   |
 | }                    |  } else {            |     } else if (true){             |              code    |
