@@ -592,7 +592,7 @@ Heap Memory:
 
         let arr = [ "super" "batman", "spider" ]
     
-        for(let index = 0; index < arr.length; index++ ) {
+        for(let index = 0; index < arr.length; index++) {
               const element = arr[index];
               console.log(element)
         }
@@ -602,7 +602,7 @@ Heap Memory:
 
         let index = 0;                     // initialization
     
-        while( condition ){
+        while(condition){
               console.log("sidd")
               index++                     // incremant/decrement
         }
@@ -612,10 +612,10 @@ Heap Memory:
 
         let index = 0;                     // initialization
     
-        do( condition ){
+        do(condition){
               console.log("sidd")
               index++                     // incremant/decrement
-        }while ( condition );
+        }while(condition);
     ```
     
 
