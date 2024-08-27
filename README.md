@@ -577,6 +577,38 @@ Heap Memory:
    console.log(val1)
 ```
 ## 
+    ```javascript
+       script.js
+       function one(){
+            console.log("one")       // add break point
+       }
+    
+       function two(){
+            console.log("one")      // add break point
+       }
+    
+       function three(){
+            console.log("one")      // add break point
+       }
+       one()
+       two()
+       three()
+
+       function one(){
+            console.log("one")       // add break point
+            two()
+       }
+    
+       function two(){
+            console.log("one")      // add break point
+            three()
+       }
+    
+       function three(){
+            console.log("one")      // add break point
+       }
+       one()
+```
 
 
 
