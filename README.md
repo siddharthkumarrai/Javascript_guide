@@ -544,6 +544,7 @@ Heap Memory:
        one()
 ```
 ## CONTROL_FLOW
+```
 ----------------------------------------------------------------------------------------------------------------------------
 |   if(true){          |  if(false){      |   if(false){                                         |  switch(key) {          |
 |     executes this    |    not execute   |      not execute                                     |     case value :        |
