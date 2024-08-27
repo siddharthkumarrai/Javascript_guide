@@ -544,7 +544,7 @@ Heap Memory:
        one()
 ```
 ## CONTROL_FLOW
- ```javascript
+ ```python
    if(true){          |  if(false){      |   if(false){                                         |  switch(key) {
      executes this    |    not execute   |      not execute                                     |     case value :
    }                  |  }               |   } else if (true){                                  |
