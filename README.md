@@ -546,6 +546,7 @@ Heap Memory:
 ## CONTROL_FLOW
 
 ```javascript
+
    if(true){          |  if(false){      |   if(false){                                         |  switch(key) {
      executes this    |    not execute   |      not execute                                     |     case value :
    }                  |  }               |   } else if (true){                                  |
