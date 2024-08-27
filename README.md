@@ -546,7 +546,7 @@ Heap Memory:
 ```
 ## CONTROL_FLOW
 
-| if                   |  if , else              | if,else if, else                     | switch                  |
+| if                   |  if , else              | if / else if / else                  | switch                  |
 |----------------------|-------------------------|--------------------------------------|-------------------------|
 |                      |                         |                                      |                         |
 | if ( true ) {        |  if ( false ) {         |    if(false){                        |    switch(key){         |
