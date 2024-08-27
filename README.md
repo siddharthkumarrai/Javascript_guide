@@ -547,13 +547,13 @@ Heap Memory:
 ## CONTROL_FLOW
 
 | if                   |  if , else           | if,else if, else                  | switch               |
-|:-------------------- |:-------------------- |:----------------------------------|:---------------------|
+|--------------------- |--------------------- |-----------------------------------|----------------------|
 | ```javascript        | ```javascript        |  ```javascript                    |   ```javascript      |
 | if(true){            |  if(false){          |     if(false){                    |     switch(key){     |
 |    execute code      |     not execute code |         not execute code          |        case value:   |
 | }                    |  } else {            |     } else if (true){             |              code    |
 | ```                  |       execute this   |          execute code             |              break;  |
-|:--------------------:| }                    |    } else {                       |                      |
+|                      | }                    |    } else {                       |                      |
 |                      | ```                  |         if(false),else if(false), |       default:       |
 |                      |                      |           execute code            |             code     |
 |                      |                      |    }                              |             break;   |
