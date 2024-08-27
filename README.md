@@ -545,7 +545,6 @@ Heap Memory:
 ```
 ## CONTROL_FLOW
 
-```javascript
 
 ----------------------------------------------------------------------------------------------------------------------------
 |   if(true){          |  if(false){      |   if(false){                                         |  switch(key) {          |
@@ -558,8 +557,24 @@ Heap Memory:
 |                      |                  |                                                      |  }                      |
 ----------------------------------------------------------------------------------------------------------------------------
 
-```
+- truthy values ( "0",'false',"space",[],{},function(){} )
+- falsy values  (false,0,-0,BigInt0n,"",null,undefined,NaN
 
+## Nullish Coalescing Operator (??): null/undefined
+```javascript
+   let val1;
+   val1 = 5??10
+   console.log(val1); // 5
+
+   val1 = null??10
+   console.log(val1); // 10
+
+   val1 = undefined??15
+   console.log(val1); // undefined
+
+   val1 = null??10??15
+   console.log(val1)
+```
 
 
 
