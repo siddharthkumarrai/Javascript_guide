@@ -617,7 +617,16 @@ Heap Memory:
               index++                     // incremant/decrement
         }while(condition);
     ```
+    - for of loops                       // (array specific) (don't use in objects,error aaygi object are not iterable)
     
+      ```javascript
+      
+         const arr = [1,2,3,4,5]
+
+         for( const num of arr) {
+            console.log(num)            // 1 2 3 4 5         }
+         }
+      ```
 
 
 
