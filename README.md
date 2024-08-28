@@ -661,7 +661,7 @@ Heap Memory:
               console.log(key)                                //  js py
 
            }
-        ```
+      ```
     > foreach, filter, map, reduce
       - myArr2.forEach((element) => console.log(element))&nbsp; &nbsp; // Output: 0, 1, 2, 3, 4, 5  &nbsp; &nbsp;  // return nahi karta      &nbsp; &nbsp; // 3 parameter le skta hain (item,index,array)
       - myArr2.map((element) => element * 2))            &nbsp; &nbsp; // Output: 0, 2, 4, 6, 8, 10 &nbsp; &nbsp;  // value return karta hain
