@@ -627,7 +627,9 @@ Heap Memory:
               index++                     // incremant/decrement
         }while(condition);
     ```
-    - for of loops                       // (array specific) , (don't use in objects,error aaygi object are not iterable) , (Map data structure pr lag jayega key value pair ka array return karega)
+    
+    > for of loops &nbsp; &nbsp; &nbsp; &nbsp; // (array specific) ,&nbsp; (don't use in objects,error aaygi object are not iterable) ,&nbsp; (Map data structure pr lag jayega key value pair ka array 
+       return karega)
     
       ```javascript
       
@@ -659,10 +661,10 @@ Heap Memory:
            }
         ```
     > foreach, filter, map, reduce
-      - myArr2.forEach((element) => console.log(element)); // Output: 0, 1, 2, 3, 4, 5    // return nahi karta
-      - myArr2.map((element) => element * 2))              // Output: 0, 2, 4, 6, 8, 10   // value return karta hain
-      - myArr2.filter((element) => element > 1));          // Output: [2, 3, 4, 5]        // value return karta hain
-      - myArr2.reduce((acc, element) => acc + element));   // Output: 15                  // value return karta hain
+      - myArr2.forEach((element) => console.log(element))&nbsp; &nbsp; // Output: 0, 1, 2, 3, 4, 5  &nbsp; &nbsp;  // return nahi karta
+      - myArr2.map((element) => element * 2))            &nbsp; &nbsp; // Output: 0, 2, 4, 6, 8, 10 &nbsp; &nbsp;  // value return karta hain
+      - myArr2.filter((element) => element > 1));        &nbsp; &nbsp; // Output: [2, 3, 4, 5]      &nbsp; &nbsp; // value return karta hain
+      - myArr2.reduce((acc, element) => acc + element)); &nbsp; &nbsp; // Output: 15                &nbsp; &nbsp; // value return karta hain
 
 
 
