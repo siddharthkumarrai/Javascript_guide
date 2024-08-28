@@ -585,6 +585,15 @@ Heap Memory:
 ## TERNERARY OPERATOR
 **condition ? true : false**
 
+## Maps
+> Map ek data structure hai jo key-value pairs ko store karta hai.
+```javascript
+   const map = new Map()
+   map.set("IN","India")
+   map.set("USA","united states of America")
+
+   console.log(map)                           // Map(2) { 'IN' => 'India', 'USA' => 'united states of America' }
+
 ## ITERATIONS
 > loops
   - for loop
@@ -617,19 +626,42 @@ Heap Memory:
               index++                     // incremant/decrement
         }while(condition);
     ```
-    - for of loops                       // (array specific) (don't use in objects,error aaygi object are not iterable)
+    - for of loops                       // (array specific) , (don't use in objects,error aaygi object are not iterable) , (Map data structure pr lag jayega key value pair ka array return karega)
     
       ```javascript
       
          const arr = [1,2,3,4,5]
 
          for( const num of arr) {
-            console.log(num)            // 1 2 3 4 5         }
+            console.log(num)                        // 1 2 3 4 5   
          }
+
+        const map = new Map()
+        map.set("IN","India")
+        map.set("USA","united states of America")
+
+       for (const [key,value] of map) {
+         console.log(`${key}:- ${value}`)          // IN:- India USA:- united states of America
+      }
+
       ```
+      - for in loop (object specific) (array pr bhi laga skte hain) (map pr iterate nahi hota or error bhi nahi aati)
+        ```javascript
+           const obj = {
+              js : "jaavascript",
+              py : "python"
+           }
 
+           for (const key in obj){
+              console.log(key)                                //  js py
 
-
+           }
+        ```
+    > foreach, filter, map, reduce
+      - myArr2.forEach((element) => console.log(element)); // Output: 0, 1, 2, 3, 4, 5    // return nahi karta
+      - myArr2.map((element) => element * 2))              // Output: 0, 2, 4, 6, 8, 10   // value return karta hain
+      - myArr2.filter((element) => element > 1));          // Output: [2, 3, 4, 5]        // value return karta hain
+      - myArr2.reduce((acc, element) => acc + element));   // Output: 15                  // value return karta hain
 
 
 
