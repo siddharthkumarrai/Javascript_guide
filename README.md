@@ -649,9 +649,9 @@ Heap Memory:
 
       ```
       > for in loop &nbsp; &nbsp; (object specific) &nbsp; &nbsp; (array pr bhi laga skte hain) &nbsp; &nbsp; (map pr iterate nahi hota or error bhi nahi aati)
-      
-        ```javascript
-    
+       
+      ```javascript
+     
            const obj = {
               js : "jaavascript",
               py : "python"
