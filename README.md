@@ -663,7 +663,7 @@ Heap Memory:
            }
         ```
     > foreach, filter, map, reduce
-      - myArr2.forEach((element) => console.log(element))&nbsp; &nbsp; // Output: 0, 1, 2, 3, 4, 5  &nbsp; &nbsp;  // return nahi karta
+      - myArr2.forEach((element) => console.log(element))&nbsp; &nbsp; // Output: 0, 1, 2, 3, 4, 5  &nbsp; &nbsp;  // return nahi karta      &nbsp; &nbsp; // 3 parameter le skta hain (item,index,array)
       - myArr2.map((element) => element * 2))            &nbsp; &nbsp; // Output: 0, 2, 4, 6, 8, 10 &nbsp; &nbsp;  // value return karta hain
       - myArr2.filter((element) => element > 1));        &nbsp; &nbsp; // Output: [2, 3, 4, 5]      &nbsp; &nbsp; // value return karta hain
       - myArr2.reduce((acc, element) => acc + element)); &nbsp; &nbsp; // Output: 15                &nbsp; &nbsp; // value return karta hain
