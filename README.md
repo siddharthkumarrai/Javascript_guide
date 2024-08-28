@@ -585,7 +585,7 @@ Heap Memory:
 ## TERNERARY OPERATOR
 **condition ? true : false**
 
-## Maps
+## Map
 > Map ek data structure hai jo key-value pairs ko store karta hai.
 ```javascript
    const map = new Map()
