@@ -593,6 +593,7 @@ Heap Memory:
    map.set("USA","united states of America")
 
    console.log(map)                           // Map(2) { 'IN' => 'India', 'USA' => 'united states of America' }
+```
 
 ## ITERATIONS
 > loops
