@@ -6,29 +6,21 @@
 
 **HTML Tag  ---> Convert token ---> conver node ---> bunch of node is DOM**
 
-## DOM Tree and JavaScript Environment Overview
+### Merging Diagrams (Option):
+If you want a combined diagram that shows both the DOM tree and JavaScript environment within one Mermaid block, you can do something like this:
 
-<div style="display: flex; justify-content: space-between;">
-
-<div style="width: 48%;">
-
-### DOM Tree Structure
+```markdown
+## Combined Diagram
 
 ```mermaid
-graph TD;
-    Document --> html;
+graph LR;
+    Window --> DOM;
+    Window --> BOM;
+    Window --> "Core JavaScript";
+    
+    DOM --> html;
     html --> head;
     html --> body;
     head --> title;
     body --> h1;
     body --> p;
-</div> <div style="width: 48%;">
-
-graph TD;
-    Window --> DOM;
-    Window --> BOM;
-    Window --> "Core JavaScript";
-</div> </div> ```
-
-
-
