@@ -28,6 +28,7 @@ graph TD;
     head --> title;
     body --> h1;
     body --> p;
+```
 
 ```mermaid
 graph TD;
@@ -44,5 +45,6 @@ graph TD;
     "Core JavaScript" --> "Functions";
     "Core JavaScript" --> "Objects";
     "Core JavaScript" --> "Events";
+```
 
 
