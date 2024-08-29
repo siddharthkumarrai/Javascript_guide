@@ -35,16 +35,5 @@ graph TD;
     Window --> DOM;
     Window --> BOM;
     Window --> "Core JavaScript";
-    
-    DOM --> "Document";
-    BOM --> "Navigator";
-    BOM --> "Screen";
-    BOM --> "Location";
-    BOM --> "History";
-    
-    "Core JavaScript" --> "Functions";
-    "Core JavaScript" --> "Objects";
-    "Core JavaScript" --> "Events";
-```
 
 
