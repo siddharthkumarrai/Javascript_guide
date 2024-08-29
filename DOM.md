@@ -6,6 +6,23 @@
 
 **HTML Tag  ---> Convert token ---> conver node ---> bunch of node is DOM**
 
+## DOM Tree Structure
+
+```mermaid
+graph TD;
+    Document --> html;
+    html --> head;
+    html --> body;
+    head --> title;
+    body --> h1;
+    body --> p;
+
+graph TD;
+    Window --> DOM;
+    Window --> BOM;
+    Window --> "Core JavaScript";
+
+
 ### Merging Diagrams (Option):
 If you want a combined diagram that shows both the DOM tree and JavaScript environment within one Mermaid block, you can do something like this:
 
