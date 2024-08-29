@@ -21,5 +21,29 @@ graph TB;
     body --> h1;
     body --> p;
 ```
+## DOM MANIPULATION
+**Javascript code ke through ---> HTML ko manipulate karna**
+
+graph TD
+    A[Root] --> B[Header]
+    A --> C[Main]
+    A --> D[Footer]
+    C --> E[Article]
+    C --> F[Sidebar]
+    E --> G[Title]
+    E --> H[Content]
+    F --> I[Links]
+    F --> J[Widgets]
+
+    %% Changes
+    subgraph Changes
+        X[Updated Header] --> Y[New Section]
+        Y --> Z[Updated Content]
+    end
+
+    %% Highlight changes
+    classDef changes fill:#f9f,stroke:#333,stroke-width:2px;
+    class X,Y,Z changes;
+
 
 
