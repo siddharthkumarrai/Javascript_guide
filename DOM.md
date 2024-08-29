@@ -24,6 +24,7 @@ graph TB;
 ## DOM MANIPULATION
 **Javascript code ke through ---> HTML ko manipulate karna**
 
+```mermaid
 graph TD
     A[Root] --> B[Header]
     A --> C[Main]
