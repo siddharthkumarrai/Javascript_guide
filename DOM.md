@@ -33,7 +33,7 @@ graph LR;
     Window --> BOM;
     Window --> CoreJavaScript;
     
-    DOM --> html;
+    document --> html;
     html --> head;
     html --> body;
     head --> title;
