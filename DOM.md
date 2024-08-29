@@ -6,19 +6,13 @@
 
 **HTML Tag  ---> Convert token ---> conver node ---> bunch of node is DOM**
 
-## DOM Tree Diagram
-```HTML
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <p>This is a paragraph.</p>
-  </body>
-</html>
-```
+## DOM Tree and JavaScript Environment Overview
+
+<div style="display: flex; justify-content: space-between;">
+
+<div style="width: 48%;">
+
+### DOM Tree Structure
 
 ```mermaid
 graph TD;
@@ -28,12 +22,13 @@ graph TD;
     head --> title;
     body --> h1;
     body --> p;
-```
+</div> <div style="width: 48%;">
 
-```mermaid
 graph TD;
     Window --> DOM;
     Window --> BOM;
     Window --> "Core JavaScript";
+</div> </div> ```
+
 
 
