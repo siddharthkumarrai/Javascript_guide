@@ -26,4 +26,17 @@ graph TD;
     Window --> DOM;
     Window --> BOM;
     Window --> CoreJavaScript;
+```
+graph LR;
+    Window --> DOM;
+    Window --> BOM;
+    Window --> "Core JavaScript";
+    
+    DOM --> html;
+    html --> head;
+    html --> body;
+    head --> title;
+    body --> h1;
+    body --> p;
+
 
