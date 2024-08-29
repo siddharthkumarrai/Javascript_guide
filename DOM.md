@@ -27,6 +27,7 @@ graph TD;
     Window --> BOM;
     Window --> CoreJavaScript;
 ```
+```mermaid
 graph LR;
     Window --> DOM;
     Window --> BOM;
@@ -38,5 +39,6 @@ graph LR;
     head --> title;
     body --> h1;
     body --> p;
+```
 
 
