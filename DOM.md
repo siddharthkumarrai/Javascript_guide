@@ -10,6 +10,8 @@
 
 ## DOM Tree Structure
 
+## DOM Tree Structure
+
 ```mermaid
 graph TD;
     Document --> html;
@@ -18,21 +20,3 @@ graph TD;
     head --> title;
     body --> h1;
     body --> p;
-
-graph TD;
-    Window --> DOM;
-    Window --> BOM;
-    Window --> "Core JavaScript";
-
-graph LR;
-    Window --> DOM;
-    Window --> BOM;
-    Window --> "Core JavaScript";
-    
-    DOM --> html;
-    html --> head;
-    html --> body;
-    head --> title;
-    body --> h1;
-    body --> p;
-
