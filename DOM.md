@@ -30,7 +30,7 @@ graph TD;
 graph LR;
     Window --> DOM;
     Window --> BOM;
-    Window --> "Core JavaScript";
+    Window --> CoreJavaScript;
     
     DOM --> html;
     html --> head;
