@@ -9,7 +9,7 @@
 ## DOM Tree Structure
 
 ```mermaid
-graph LR;
+graph TB;
     Window --> DOM;
     Window --> BOM;
     Window --> CoreJavaScript;
