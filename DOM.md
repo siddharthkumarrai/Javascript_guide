@@ -8,25 +8,6 @@
 
 ## DOM Tree Structure
 
-## DOM Tree Structure
-
-## DOM Tree Structure
-
-```mermaid
-graph TD;
-    Document --> html;
-    html --> head;
-    html --> body;
-    head --> title;
-    body --> h1;
-    body --> p;
-```
-```mermaid
-graph TD;
-    Window --> DOM;
-    Window --> BOM;
-    Window --> CoreJavaScript;
-```
 ```mermaid
 graph LR;
     Window --> DOM;
