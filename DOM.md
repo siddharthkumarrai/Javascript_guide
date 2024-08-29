@@ -25,5 +25,5 @@ graph TD;
 graph TD;
     Window --> DOM;
     Window --> BOM;
-    Window --> "Core JavaScript";
+    Window --> Core JavaScript;
 
