@@ -20,3 +20,9 @@ graph TD;
     head --> title;
     body --> h1;
     body --> p;
+
+graph TD;
+    Window --> DOM;
+    Window --> BOM;
+    Window --> "Core JavaScript";
+
