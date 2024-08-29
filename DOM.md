@@ -20,7 +20,8 @@ graph TD;
     head --> title;
     body --> h1;
     body --> p;
-
+```
+```mermaid
 graph TD;
     Window --> DOM;
     Window --> BOM;
