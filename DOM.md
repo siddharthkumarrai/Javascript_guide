@@ -32,6 +32,7 @@ graph TB;
     Access --> getElementByID;
     Access --> getElementByClassName;
     Access --> getElementByTagName;
+    Access --> $0;
 
 ```
 
