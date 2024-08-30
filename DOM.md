@@ -25,26 +25,14 @@ graph TB;
 **Javascript code ke through ---> HTML ko manipulate karna**
 
 ```mermaid
-graph TD
-    A[Root] --> B[Header]
-    A --> C[Main]
-    A --> D[Footer]
-    C --> E[Article]
-    C --> F[Sidebar]
-    E --> G[Title]
-    E --> H[Content]
-    F --> I[Links]
-    F --> J[Widgets]
+graph TB;
 
-    %% Changes
-    subgraph Changes
-        X[Updated Header] --> Y[New Section]
-        Y --> Z[Updated Content]
-    end
+    HTML_change --> Access;
+    Access --> getElementByID();
+    html --> getElementByClassName();
+    head --> getElementByTagName();
 
-    %% Highlight changes
-    classDef changes fill:#f9f,stroke:#333,stroke-width:2px;
-    class X,Y,Z changes;
+```
 
 
 
