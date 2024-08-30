@@ -55,7 +55,16 @@ graph TB;
 
 
 ```
+> access element
+
+- documnet.getElementById("#myid")
+- document.getElementByClassName("myClass")
+- document.getElementByTagName("p")
+- document.querySelector(".myclass")
+- document.querySelector(".myclass")
+
 > update element
+
 - innerHTML
 ```javascript
 const button = documnet.querySelector("#btn")
@@ -69,24 +78,38 @@ button.innerHTML = "<p>hello jee <p/>
 ```javascript
    // wo sara text content jo aap ke tag ke ander hota hain eg. tab /n
 ```
+
 > add element
+
 - create element
   ```javascript
      const heading = document.createElement("h1")
      heading.textContent = "my name is sidd"
   ```
 - append element
+  
   **child humesa end mein add ho rha hota hain**
+  
   ```javascript
      const body = document.querySelector("body")
      body.appendChild(heading)
   ```
+  
 - insertAdjacentElement
+  
   ```javascript
      let mydiv = document.querySelector("#mydiv);    // jis dive ke relative mein rkhna chate hain use select karna
      let newElement = document.createElement("span") // kon sa element rkhna hai
      mydiv.insertAdjacentHTML("beforebegin",newElement)
   ```
+  
+> remove element
+
+```javascript
+   const parent = document.querySelector("#mydiv")
+   const child = document.querySelector("#mychild")
+   parent.removeChild(child)
+```
 
 
 
