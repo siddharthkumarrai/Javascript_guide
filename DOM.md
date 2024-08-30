@@ -43,21 +43,40 @@ graph TB;
     document --> add_element;
     add_element --> creation_element;
     add_element --> .appendChild;
+    .appendChild --> insertAdjacentHTML;
+    insertAdjacentHTML --> beforeBegin;
+    insertAdjacentHTML --> afterBegin;
+    insertAdjacentHTML --> beforeEnd;
+    insertAdjacentHTML --> afterEnd;
+
 
 ```
->innerHTML
+> update element
+- innerHTML
 ```javascript
 const button = documnet.querySelector("#btn")
 button.innerHTML = "<p>hello jee <p/>
 ```
->innerText
+- innerText
 ```javascript
    //jese  hum apne element to render karte ui pr same usi prkar humara innerHTML output dega
 ```
->textContent
+- textContent
 ```javascript
    // wo sara text content jo aap ke tag ke ander hota hain eg. tab /n
 ```
+> add element
+- create element
+  ```javascript
+     const heading = document.createElement("h1")
+     heading.textContent = "my name is sidd"
+  ```
+- append element
+  **child humesa end mein add ho rha hota hain**
+  ```javascript
+     const body = document.querySelector("body")
+     body.appendChild(heading)
+  ```
 
 
 
