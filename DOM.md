@@ -38,14 +38,22 @@ graph TB;
     document --> update_existing_element;
     update_existing_element --> innerHTML;
     update_existing_element --> outerHTML;
-    update_existing_element --> text-content;
+    update_existing_element --> textContent;
     update_existing_element --> innerText;
 
 ```
+>innerHTML
 ```javascript
 const button = documnet.querySelector("#btn")
 button.innerHTML = "<p>hello jee <p/>
-
+```
+>innerText
+```javascript
+   //jese  hum apne element to render karte ui pr same usi prkar humara innerHTML output dega
+```
+>textContent
+```javascript
+   // wo sara text content jo aap ke tag ke ander hota hain eg. tab /n
 ```
 
 
