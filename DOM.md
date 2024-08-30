@@ -35,6 +35,11 @@ graph TB;
     Access --> getElementByClassName;
     Access --> getElementByTagName;
     Access --> $0;
+    document --> update_existing_element;
+    update_existing_element --> innerHTML;
+    update_existing_element --> outerHTML;
+    update_existing_element --> text-content;
+    update_existing_element --> innerText;
 
 ```
 
