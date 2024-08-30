@@ -123,6 +123,23 @@ graph TB;
 
 ```
 
+> inline style
+
+ ```javascript
+    para.style.backgroundColor = "black"                             // ek bar mein ek hi property ko change kar pata hunn
+    para.style.cssText = "background-color: black; color: pink;"    // ek sath multiple style change kar sakta hunn
+```
+> setAttribute
+```javascript
+   const para = document.querySelector("p")
+   para.setAttribute("class","myClass")
+   para.setAttribute("style","padding: 1rem")
+   para.className = "sidd raj"                      // class add karta hain
+   para.classList                                   // return array like
+   para.classList.add("myaddingclass")
+   para.classList.remove("myclass")
+```
+
 
 
 
