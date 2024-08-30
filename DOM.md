@@ -42,6 +42,12 @@ graph TB;
     update_existing_element --> innerText;
 
 ```
+```javascript
+const button = documnet.querySelector("#btn")
+button.innerHTML = "<p>hello jee <p/>
+
+```
+
 
 
 
