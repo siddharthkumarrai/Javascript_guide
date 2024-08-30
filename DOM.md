@@ -44,10 +44,12 @@ graph TB;
     add_element --> creation_element;
     add_element --> .appendChild;
     .appendChild --> insertAdjacentHTML;
-    insertAdjacentHTML --> beforeBegin;
-    insertAdjacentHTML --> afterBegin;
-    insertAdjacentHTML --> beforeEnd;
-    insertAdjacentHTML --> afterEnd;
+    insertAdjacentHTML --> position;
+    insertAdjacentHTML --> HTMLcontent
+    positionL --> beforeBegin;
+    position --> afterBegin;
+    position --> beforeEnd;
+    position --> afterEnd;
 
 
 ```
