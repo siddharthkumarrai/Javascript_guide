@@ -23,6 +23,7 @@ graph TB;
 ```
 ## DOM MANIPULATION
 **Javascript code ke through ---> HTML ko manipulate karna**
+
 **documnet.querySelector("#id")**
 
 ```mermaid
