@@ -138,6 +138,7 @@ graph TB;
    para.classList                                   // return array like
    para.classList.add("myaddingclass")
    para.classList.remove("myclass")
+   para.toggle("myClass")                           // return true and false class add or remove karega
 ```
 
 
