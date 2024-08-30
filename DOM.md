@@ -139,6 +139,7 @@ graph TB;
    para.classList.add("myaddingclass")
    para.classList.remove("myclass")
    para.toggle("myClass")                           // return true and false class add or remove karega
+   para.contains("myclass")                         // return true and false check present and absent
 ```
 
 
