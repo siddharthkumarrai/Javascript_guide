@@ -46,7 +46,7 @@ graph TB;
     .appendChild --> insertAdjacentHTML;
     insertAdjacentHTML --> position;
     insertAdjacentHTML --> HTMLcontent
-    positionL --> beforeBegin;
+    position --> beforeBegin;
     position --> afterBegin;
     position --> beforeEnd;
     position --> afterEnd;
