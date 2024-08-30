@@ -27,7 +27,8 @@ graph TB;
 ```mermaid
 graph TB;
 
-    change_HTML --> Access;
+    change_HTML --> document;
+    document --> Access;
     Access --> getElementByID;
     Access --> getElementByClassName;
     Access --> getElementByTagName;
