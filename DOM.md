@@ -58,10 +58,12 @@ graph TB;
 > access element
 
 - documnet.getElementById("#myid")
-- document.getElementByClassName("myClass")
+- document.getElementByClassName("myClass") &nbsp; &nbsp; &nbsp; // return HTML collection
 - document.getElementByTagName("p")
 - document.querySelector(".myclass")
-- document.querySelector(".myclass")
+- document.querySelectorAll(".myclass") &nbsp; &nbsp; &nbsp; // return node list
+
+**Node list and HTML collection are not pure array (array like)**
 
 > update element
 
