@@ -43,13 +43,15 @@ graph TB;
     document --> add_element;
     add_element --> creation_element;
     add_element --> .appendChild;
-    .appendChild --> insertAdjacentHTML;
-    insertAdjacentHTML --> position;
-    insertAdjacentHTML --> HTMLcontent
+    .appendChild --> insertAdjacentElement;
+    insertAdjacentElement --> position;
+    insertAdjacentElement --> HTMLcontent
     position --> beforeBegin;
     position --> afterBegin;
     position --> beforeEnd;
     position --> afterEnd;
+    document --> removeElement;
+    removeElement --> removeChild;
 
 
 ```
@@ -78,6 +80,12 @@ button.innerHTML = "<p>hello jee <p/>
   ```javascript
      const body = document.querySelector("body")
      body.appendChild(heading)
+  ```
+- insertAdjacentElement
+  ```javascript
+     let mydiv = document.querySelector("#mydiv);    // jis dive ke relative mein rkhna chate hain use select karna
+     let newElement = document.createElement("span") // kon sa element rkhna hai
+     mydiv.insertAdjacentHTML("beforebegin",newElement)
   ```
 
 
