@@ -42,7 +42,7 @@ graph TB;
     update_existing_element --> innerText;
     document --> add element;
     add element --> creation_element;
-    add element --> .appendChild;
+    add element --> appendChild;
 
 ```
 >innerHTML
