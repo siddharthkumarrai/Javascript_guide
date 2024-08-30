@@ -28,9 +28,9 @@ graph TB;
 graph TB;
 
     HTMLchange --> Access;
-    Access --> getElementByID();
-    html --> getElementByClassName();
-    head --> getElementByTagName();
+    Access --> getElementByID;
+    html --> getElementByClassName;
+    head --> getElementByTagName;
 
 ```
 
