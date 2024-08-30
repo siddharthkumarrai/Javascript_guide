@@ -22,7 +22,7 @@ graph TB;
     body --> p;
 ```
 ## DOM MANIPULATION
-**Javascript code ke through ---> HTML ko manipulate karna**
+### Javascript code ke through ---> HTML ko manipulate karna
 
 **documnet.querySelector("#id")**
 
@@ -111,6 +111,16 @@ button.innerHTML = "<p>hello jee <p/>
    const parent = document.querySelector("#mydiv")
    const child = document.querySelector("#mychild")
    parent.removeChild(child)
+```
+### Javascript code ke through ---> css manipulation
+
+```mermaid
+graph TB;
+
+    manipulate_css --> external;
+    manipulate_css --> internal;
+    manipulate_css --> inline;
+
 ```
 
 
