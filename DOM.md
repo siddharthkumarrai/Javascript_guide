@@ -143,7 +143,7 @@ graph TB;
 ```
 
 # Js Part 2
-## Event_listener (refer to BGCOLORCHANGER in root directory)
+## click event (refer to BGCOLORCHANGER in root directory)
 ```javascript
 let body = document.querySelector("body")
 let btns = document.querySelectorAll(".buttons")
@@ -165,6 +165,30 @@ btns.forEach((btn)=>{
             default : body.style.backgroundColor = "white"
         }
     })
+})
+```
+## submit event (refer to BMI_CALCULATOR in root directory)
+```javascript
+let form = document.querySelector("form")
+
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    const weight = parseInt(document.querySelector("#weight").value)
+    const height = parseInt(document.querySelector("#height").value)
+    const res =  document.querySelector("#result")
+
+
+    if(weight === '' || weight < 0 || isNaN(weight)){
+        res.textContent = "Please enter a valid weight"
+    }else if (height=== '' || height<0 || isNaN(height)){
+        res.textContent = "Please enter a valid height"
+    }
+    else{
+    const result = (weight/((height*height)/10000)).toFixed(2)
+    res.innerText = `RESULT : Your BMI is ${result}`
+    }
+
 })
 ```
 
