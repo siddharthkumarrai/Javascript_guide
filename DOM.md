@@ -143,7 +143,7 @@ graph TB;
 ```
 
 # Js Part 2
-## Event_listener
+## Event_listener (refer to BGCOLORCHANGER in root directory)
 ```javascript
 let body = document.querySelector("body")
 let btns = document.querySelectorAll(".buttons")
