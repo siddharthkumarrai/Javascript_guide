@@ -349,7 +349,9 @@ function newGame(){
           },false)
 ```
 >  e.stopPropagation()                   // not bubbling
+
 >  e.preventDefault()                    // Don't go to the URL
+
 - real scenario
 ```javascript
         document.querySelector("#images").addEventListener("click",(e)=>{
