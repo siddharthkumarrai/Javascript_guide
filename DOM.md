@@ -330,6 +330,15 @@ function newGame(){
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 ```
+## event propagation 
+```javascript
+   addEventListener("click",(e)=>{
+            console.log(e)
+   },false)
+```
+> It have two context
+- event bubbling (default false parameter ) 
+- event capturing (true parameter )
    
 
 
