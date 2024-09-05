@@ -337,8 +337,17 @@ function newGame(){
    },false)
 ```
 > It have two context
-- event bubbling (default false parameter ) 
-- event capturing (true parameter )
+- event bubbling (default false parameter ) (inside to outside propagations)
+- event capturing (true parameter ) (outside to inside )
+```javascript
+        document.querySelector("#images").addEventListener("click",(e)=>{
+             console.log("clicked inside the ul a");
+         },false)
+         document.querySelector("#tourtle").addEventListener("click",(e)=>{
+            console.log("tourtle was clicked b");
+            e.stopPropagation()
+          },false)
+```
    
 
 
