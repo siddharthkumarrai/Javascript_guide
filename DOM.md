@@ -314,7 +314,21 @@ function newGame(){
          alert("Turtle clicked");
          console.log("tourtle was clicked");
      }
-    // give very less information
+    // give very less information,features
+```
+### 3.) Approach 3 addEventListener ( onclick event )
+```javascript
+   document.querySelector("#images").addEventListener("click",(e)=>{
+            console.log(e)
+   },false)
+
+    // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
 ```
    
 
