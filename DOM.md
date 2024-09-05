@@ -350,6 +350,16 @@ function newGame(){
 ```
 >  e.stopPropagation()                   // not bubbling
 >  e.preventDefault()                    // Don't go to the URL
+- real scenario
+```javascript
+        document.querySelector("#images").addEventListener("click",(e)=>{
+            if(e.target.tagName === 'IMG'){
+                let removeElement = e.target.parentNode
+                // removeElement.parentNode.removeChlid(removeElement)
+                removeElement.remove()
+            }
+         })
+```
 
    
 
