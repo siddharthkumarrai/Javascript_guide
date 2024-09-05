@@ -302,13 +302,19 @@ function newGame(){
 ```
 # JAVASCRIPT_ADVANCED_CONCEPT
 ## EVENT
-### inline ( onclick event )
+### 1.) inline ( onclick event )
 ```html
-   <li><img id="fox" width="200px" height="150px" src="" onclick="alert("fox")  alt=""></li>
+   <li><img id="fox" width="200px" height="150px" src="" onclick="alert("fox")"  alt=""></li>
 
    // it is not feseable approach in large scale application to get problem 
 ```
-   
+### 2.) Approach 2 ( onclick event )
+```javascript
+    document.querySelector("#tourtle").onclick = ()=>{
+         alert("Turtle clicked");
+         console.log("tourtle was clicked");
+     }
+```
    
 
 
