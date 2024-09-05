@@ -308,7 +308,7 @@ Heap Memory:
         Object.create()
         const tinderUser = new Object()
 
-   - object literals (literal se humesa singleton bnega)
+   - object literals (literal se humesa singleton nahi bnega)
          const tinderUser = {}
      
         const mySym = Symbol("key1")
