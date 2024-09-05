@@ -305,6 +305,7 @@ function newGame(){
 ### inline ( onclick event )
 ```html
    <li><img id="fox" width="200px" height="150px" src="" onclick="alert("fox")  alt=""></li>
+
    // it is not feseable approach in large scale application to get problem 
 ```
    
