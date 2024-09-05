@@ -301,7 +301,7 @@ function newGame(){
 }
 ```
 # JAVASCRIPT_ADVANCED_CONCEPT
-## EVENT
+## EVENT (refer to EVENT in root directory)
 ### 1.) inline ( onclick event )
 ```html
    <li><img id="fox" width="200px" height="150px" src="" onclick="alert("fox")"  alt=""></li>
