@@ -345,9 +345,12 @@ function newGame(){
          },false)
          document.querySelector("#tourtle").addEventListener("click",(e)=>{
             console.log("tourtle was clicked b");
-            e.stopPropagation()
+            e.stopPropagation()                   // not bubbling 
           },false)
 ```
+>  e.stopPropagation()                   // not bubbling
+>  e.preventDefault()                    // Don't go to the URL
+
    
 
 
