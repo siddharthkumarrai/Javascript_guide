@@ -314,6 +314,7 @@ function newGame(){
          alert("Turtle clicked");
          console.log("tourtle was clicked");
      }
+    // give very less information
 ```
    
 
