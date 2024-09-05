@@ -142,7 +142,7 @@ graph TB;
    para.contains("myclass")                         // return true and false check present and absent
 ```
 
-# Js Part 2
+# Js Part 2 (project)
 ## click event (refer to BGCOLORCHANGER in root directory)
 ```javascript
 let body = document.querySelector("body")
