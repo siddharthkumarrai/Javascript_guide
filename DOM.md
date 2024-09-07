@@ -368,8 +368,6 @@ function newGame(){
 
 > setTimeOut function and clear TimeOut function
 ```HTML
-        <h1>SETTIMEOUT</h1>
-        <button id="start">START</button>
         <button id="stop">STOP</button>
 ```
 ```javascript
@@ -379,7 +377,13 @@ function newGame(){
         document.getElementById("stop").addEventListener("click",function(){
             clearTimeout(setTimeOutId)
         })
-
+```
+> setInterval function and clearInterval function
+```HTML
+        <button id="start">START</button>
+        <button id="stop">STOP</button>
+```
+```javascript
         let resetInterval;
         const sayName = function(str){
             console.log(str,Date.now())
@@ -391,6 +395,7 @@ function newGame(){
             clearInterval(resetInterval)
         })
 ```
+   
 
 
    
