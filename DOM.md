@@ -367,18 +367,18 @@ function newGame(){
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/c_fill,h_700,w_520/v1725673640/Untitled_design_xfhq1e.png)
 
 > setTimeOut function and clear TimeOut function
-```html
+```HTML
         <h1>SETTIMEOUT</h1>
         <button id="start">START</button>
         <button id="stop">STOP</button>
 ```
 ```javascript
-        // let setTimeOutId = setTimeout(()=>{
-        //     console.log("siddharth kumar rai")
-        // },2000);
-        // document.getElementById("stop").addEventListener("click",function(){
-        //     clearTimeout(setTimeOutId)
-        // })
+        let setTimeOutId = setTimeout(()=>{
+            console.log("siddharth kumar rai")
+        },2000);
+        document.getElementById("stop").addEventListener("click",function(){
+            clearTimeout(setTimeOutId)
+        })
 
         let resetInterval;
         const sayName = function(str){
