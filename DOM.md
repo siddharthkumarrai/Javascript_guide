@@ -300,7 +300,7 @@ function newGame(){
     })
 }
 ```
-# JAVASCRIPT_ADVANCED_CONCEPT
+# JAVASCRIPT_EVENT_ADVANCED_CONCEPT
 ## EVENT (refer to EVENT in root directory)
 ### 1.) inline ( onclick event )
 ```html
@@ -362,7 +362,11 @@ function newGame(){
             }
          })
 ```
-
+# JAVASCRIPT_ADVANCED_CONCEPT
+## JAVASCRIPT_ASYNC_CODE
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/v1725673401/Untitled_design_fvgdzx.png)
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/w_500,ar_1:1,c_fill,g_auto,e_art:hokusai/v1724688567/WhatsApp_Image_2024-08-26_at_9.24.11_PM_vverst.jpg)
+https://res.cloudinary.com/dnknslaku/image/upload/v1725673401/Untitled_design_fvgdzx.png
    
 
 
