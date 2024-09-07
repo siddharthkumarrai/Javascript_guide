@@ -398,41 +398,6 @@ graph TD
     
     U --> |Move Tasks to Call Stack| K
     R --> |Execute Promises| K
-    
-# JavaScript Execution Model - Mermaid Diagram
-
-```mermaid
-graph TD
-    A[JavaScript] --> B[Synchronous & Single-threaded]
-    B --> C[Execution Context]
-    C --> D[Call Stack]
-    C --> E[Memory Heap]
-    
-    subgraph Blocking vs Non-Blocking Code
-        F[Blocking Code] --> G[Read File Sync]
-        H[Non-Blocking Code] --> I[Read File Async]
-    end
-    
-    D --> |Function Calls| J(JS Engine)
-    J --> K[Call Stack]
-    J --> L[Memory Heap]
-    
-    subgraph Web API
-        M[DOM API]
-        N[setTimeout]
-        O[setInterval]
-        P[fetch()]
-        P --> Q[Promise]
-        Q --> R[Microtasks Queue]
-        N & O --> S[Task Queue]
-    end
-    
-    T[Event Loop] --> |Check Call Stack| U[Task Queue]
-    T --> |Higher Priority| R[Microtasks Queue]
-    
-    U --> |Move Tasks to Call Stack| K
-    R --> |Execute Promises| K
-    
 ```
 
 
