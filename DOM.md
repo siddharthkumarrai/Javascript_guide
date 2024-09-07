@@ -364,7 +364,7 @@ function newGame(){
 ```
 # JAVASCRIPT_ADVANCED_CONCEPT
 ## JAVASCRIPT_ASYNC_CODE
-![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/c_fill,h_700,w_700/v1725673640/Untitled_design_xfhq1e.png)
+![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/c_fill,h_700,w_600/v1725673640/Untitled_design_xfhq1e.png)
 
 
    
