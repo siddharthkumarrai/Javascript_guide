@@ -395,6 +395,7 @@ function newGame(){
             clearInterval(resetInterval)
         })
 ```
+## ONCLICKBGCHANGER (refer to BGCOLORCHANGER in root directory)
    
 
 
