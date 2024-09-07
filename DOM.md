@@ -437,6 +437,76 @@ function newGame(){
              }      
             }
 ```
+## promises
+> Method 1
+- How to create promise
+  ```javascript
+  let promiseOne = new Promise(function(resolve,reject){
+        //async task
+        setTimeout(function(){
+            console.log("siddharth kumar rai")
+            resolve()
+        },1000)
+  })
+  ```
+- How to consume promise
+```javscript
+    promiseOne.then(function(){
+        console.log("promise was consumed")
+    })
+```
+> Method 2
+```javscript
+    new Promise(function(resolve,reject){
+        setTimeout(function(){
+            console.log("Db connected 2")
+            resolve()
+        },1000)
+    }).then(function(){
+        console.log("promise two consumed")
+    })
+```
+> Method 3
+```javascript
+    et promiseThree = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        console.log("new DB CONNECTED 3");
+        resolve({username:"siddharth", id: 123})
+        
+    },1000)
+})
+
+promiseThree.then(function(data){
+    console.log(data)
+})
+```
+> Method 4
+```javascript
+    let promiseFour = new Promise(function(resolve,reject){
+        setTimeout(function(){
+            let error = true
+            if(!error){
+                console.log("DB connected 4" )
+                resolve({languageName: "javaScript", id: "js"})
+            }else {
+                reject("error 404")
+            }
+        },1000)
+    })
+
+    promiseFour.then(function(data){
+        console.log("promise four consumed")
+        return data.languageName
+    }).then(function(username){
+        console.log(username)
+    })
+    .catch(function(error){
+        console.log(error,"something went wrong")
+    })
+    .finally(function(){
+    console.log("if promise was resolved then executed otherwise nor resolved then also executed")
+    })
+```
         
 
    
