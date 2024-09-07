@@ -399,10 +399,6 @@ graph TD
     U --> |Move Tasks to Call Stack| K
     R --> |Execute Promises| K
     
-    style A fill:#f9f,stroke:#333,stroke-width:4px;
-    style Web API fill:#BBF3BB,stroke:#333,stroke-width:2px;
-    style T fill:#FFFF99,stroke:#333,stroke-width:2px;
-    style Blocking_vs_Non-Blocking_Code fill:#FCF5D4,stroke:#333,stroke-width:2px;
 # JavaScript Execution Model - Mermaid Diagram
 
 ```mermaid
