@@ -365,9 +365,95 @@ function newGame(){
 # JAVASCRIPT_ADVANCED_CONCEPT
 ## JAVASCRIPT_ASYNC_CODE
 ![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/c_fill,h_700,w_500/v1725673640/Untitled_design_xfhq1e.png)
-![Alt text](https://res.cloudinary.com/dnknslaku/image/upload/w_500,ar_1:1,c_fill,g_auto,e_art:hokusai/v1724688567/WhatsApp_Image_2024-08-26_at_9.24.11_PM_vverst.jpg)
-https://res.cloudinary.com/dnknslaku/image/upload/v1725673401/Untitled_design_fvgdzx.png
-https://res.cloudinary.com/demo/image/upload/c_fill,h_200,w_200/docs/camera-640.jpg
+# JavaScript Execution Model - Mermaid Diagram
+
+```mermaid
+graph TD
+    A[JavaScript] --> B[Synchronous & Single-threaded]
+    B --> C[Execution Context]
+    C --> D[Call Stack]
+    C --> E[Memory Heap]
+    
+    subgraph Blocking vs Non-Blocking Code
+        F[Blocking Code] --> G[Read File Sync]
+        H[Non-Blocking Code] --> I[Read File Async]
+    end
+    
+    D --> |Function Calls| J(JS Engine)
+    J --> K[Call Stack]
+    J --> L[Memory Heap]
+    
+    subgraph Web API
+        M[DOM API]
+        N[setTimeout]
+        O[setInterval]
+        P[fetch()]
+        P --> Q[Promise]
+        Q --> R[Microtasks Queue]
+        N & O --> S[Task Queue]
+    end
+    
+    T[Event Loop] --> |Check Call Stack| U[Task Queue]
+    T --> |Higher Priority| R[Microtasks Queue]
+    
+    U --> |Move Tasks to Call Stack| K
+    R --> |Execute Promises| K
+    
+    style A fill:#f9f,stroke:#333,stroke-width:4px;
+    style Web API fill:#BBF3BB,stroke:#333,stroke-width:2px;
+    style T fill:#FFFF99,stroke:#333,stroke-width:2px;
+    style Blocking_vs_Non-Blocking_Code fill:#FCF5D4,stroke:#333,stroke-width:2px;
+# JavaScript Execution Model - Mermaid Diagram
+
+```mermaid
+graph TD
+    A[JavaScript] --> B[Synchronous & Single-threaded]
+    B --> C[Execution Context]
+    C --> D[Call Stack]
+    C --> E[Memory Heap]
+    
+    subgraph Blocking vs Non-Blocking Code
+        F[Blocking Code] --> G[Read File Sync]
+        H[Non-Blocking Code] --> I[Read File Async]
+    end
+    
+    D --> |Function Calls| J(JS Engine)
+    J --> K[Call Stack]
+    J --> L[Memory Heap]
+    
+    subgraph Web API
+        M[DOM API]
+        N[setTimeout]
+        O[setInterval]
+        P[fetch()]
+        P --> Q[Promise]
+        Q --> R[Microtasks Queue]
+        N & O --> S[Task Queue]
+    end
+    
+    T[Event Loop] --> |Check Call Stack| U[Task Queue]
+    T --> |Higher Priority| R[Microtasks Queue]
+    
+    U --> |Move Tasks to Call Stack| K
+    R --> |Execute Promises| K
+    
+    style A fill:#f9f,stroke:#333,stroke-width:4px;
+    style Web API fill:#BBF3BB,stroke:#333,stroke-width:2px;
+    style T fill:#FFFF99,stroke:#333,stroke-width:2px;
+    style Blocking_vs_Non-Blocking_Code fill:#FCF5D4,stroke:#333,stroke-width:2px;
+
+
+This Mermaid diagram represents the structure and flow of the JavaScript execution model:
+
+- **JavaScript** starts as a synchronous, single-threaded language with an **Execution Context** containing the **Call Stack** and **Memory Heap**.
+- **Blocking** and **Non-Blocking** code are differentiated, where blocking code (e.g., synchronous file reads) halts execution, while non-blocking code (e.g., asynchronous file reads) allows execution to continue.
+- The **JS Engine** handles the **Call Stack** and **Memory Heap**.
+- **Web APIs** like `setTimeout`, `setInterval`, and `fetch()` interact with the **Task Queue** and **Microtasks Queue** (for promises).
+- The **Event Loop** monitors the **Call Stack** and **Task Queue** to push tasks into the call stack when it's empty.
+
+You can copy and paste this code into a Markdown editor that supports Mermaid diagrams to visualize the diagram.
+
+
    
 
 
