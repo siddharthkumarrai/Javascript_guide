@@ -387,7 +387,7 @@ graph TD
         M[DOM API]
         N[setTimeout]
         O[setInterval]
-        P[fetch()]
+        P[fetch]
         P --> Q[Promise]
         Q --> R[Microtasks Queue]
         N & O --> S[Task Queue]
