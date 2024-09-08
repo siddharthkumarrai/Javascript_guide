@@ -259,7 +259,7 @@ consumedPromiseFive()
   - step 2: constructor function call hota hain new keyword ke karn ye sare argument ko pack kar ke de deta hain
   - step 3: all argument inject in this keyword
   - step 4: function ke ander mil jate hain
-## Prototypes
+## new keyword 
 - default behavior of Javascript is prototypal behavior
 - Object
 ```mermaid
@@ -309,6 +309,78 @@ The constructor is called: The constructor function is called with the specified
 The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.), the newly created object is returned.
 
 */
+```
+## Prototypes
+```javascript
+// let myName = "sidd     "
+// let mychannel = "fanstatic4     "
+
+// console.log(myName.trueLength);
+
+
+let myHeros = ["thor", "spiderman"]
+
+let heroPower = {
+    thor: "hammer",
+    spiderman: "sling",
+
+    getSpiderPower: function(){
+        console.log(`Spidy power is ${this.spiderman}`);
+    }
+}
+
+Object.prototype.sidd = function(){
+    console.log(`sidd is present in all objects`);
+}
+
+Array.prototype.heysidd = function(){
+    console.log(`sidd says hello`);
+}
+
+// heroPower.sidd()
+// myHeros.sidd()
+// myHeros.heysidd()
+// heroPower.heysidd()
+```
+
+> inheritance
+```javascript
+const User = {
+    name: "sidd",
+    email: "sidd@google.com"
+}
+
+const Teacher = {
+    makeVideo: true
+}
+
+const TeachingSupport = {
+    isAvailable: false
+}
+
+const TASupport = {
+    makeAssignment: 'JS assignment',
+    fullTime: true,
+    __proto__: TeachingSupport
+}
+
+Teacher.__proto__ = User
+```
+
+> modern syntax
+```javascript
+Object.setPrototypeOf(TeachingSupport, Teacher)
+
+let anotherUsername = "siddharth     "
+
+String.prototype.trueLength = function(){
+    console.log(`${this}`);
+    console.log(`True length is: ${this.trim().length}`);
+}
+
+anotherUsername.trueLength()
+"siddharth".trueLength()
+"iceTea".trueLength()
 ```
   
 
