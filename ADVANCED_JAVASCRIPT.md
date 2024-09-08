@@ -167,6 +167,36 @@ async function consumedPromiseFive(){
 }
 
 consumedPromiseFive()
+
+```
+## api data handle (api fetch method)
+```javascript
+async function getAllUser(){
+    try {
+      const response = await fetch("https://jsonplaceholder.typicode.com/users")
+      const data = await response.json()
+
+      console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+getAllUser()
+
+fetch("https://api.github.com/users/siddharthkumarrai")
+.then(function(data){
+    let res = data.json()
+    return res
+})
+.then(function(result){
+    console.log(result)
+}).catch(function(error){
+    console.log(error)
+})
+
+// promise.all
+// yes this is also available, kuch reading aap b kro.
 ```
         
 
