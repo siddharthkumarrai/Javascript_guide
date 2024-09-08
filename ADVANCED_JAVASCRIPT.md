@@ -198,7 +198,68 @@ consumedPromiseFive()
 // promise.all
 // yes this is also available, kuch reading aap b kro.
 ```
-        
+# Classes and OOP
+## javascript and classes
+### OOP ( programming paradigm ( code likh ne ka structure kya style producer ) )
+> Object
+- collection of property and methods e.g toUpperCase
+> why we use OOP
+- code bada messup ho raha tha (concept of spagti code( code reuse nahi ho pa rha tha ))
+> parts of OOP
+- Object literall
+- OOP keywords
+  - Constructor function
+  - Prototypes
+  - Classes
+  - Instances (new, this)
+> 4 pillars
+- Abstraction ( Details hide karlena e.g fetch )
+- Encapsulation ( ek wrapper lagana jo jo aap ko access karne deya jaye wo aap access kar paa rahe hain jo nahi karne de raha access nahi kar pa rahe hain)
+- Inheritance
+- Polymorphism ( ek hi mthod bhut sare kam kar deta hain )
+
+## OOP
+> Object literal ( basic unit )
+```javascript
+   const user = {
+        username: "siddharth",
+        loginCount: 7,
+        signedIn: true,
+
+        getUserDetails: function(){
+                console.log(`Username: ${this.username}`)
+                console.log(this)        
+        }
+   }
+   console.log(user.name)
+   console.log(user.getUserDetails())
+   console.log(this)                // {}
+```
+## constructor
+- constructor function ( new keyword ) (in single instance create multiple object )
+```javascript
+   const promiseOne = new Promise()
+   const date new Date()
+
+   function user( username, loginCount, isLoggedIn ){
+        this.username = username;
+        this.loginCount = loginCount;
+        this.isLoggedIn = isLoggedIn;
+
+        return this
+   }
+
+   const userOne = new user("siddharth", 7, true)
+   const userTwo = new user("abhishek", 17, false)
+   console.log(userOne)
+   console.log(userOne.constructor) (refrence hota hain khud ke bare mein)
+```
+- how new keyword work
+  - step 1: new object create
+  - step 2: constructor function call hota hain new keyword ke karn ye sare argument ko pack kar ke de deta hain
+  - step 3: all argument inject in this keyword
+  - step 4: function ke ander mil jate hain
+
 
    
 
