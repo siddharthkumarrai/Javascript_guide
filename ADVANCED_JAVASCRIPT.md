@@ -262,12 +262,12 @@ consumedPromiseFive()
 ## Prototypes
 - default behavior of Javascript is prototypal behavior
 - Object
-  ```mermaid
+```mermaid
 graph LR;
-    Array --> Object
-    String --> Object
-    Function --> Object
-    Object --> null
+    Array --> Object;
+    String --> Object;
+    Function --> Object;
+    Object --> null;
 ```
   ```javascript
      function multiplyBy7(num){
