@@ -143,6 +143,31 @@ promiseThree.then(function(data){
     console.log("if promise was resolved then executed otherwise nor resolved then also executed")
     })
 ```
+> Method 5 ( using async await )
+```javascript
+let promiseFive = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = false
+        if(!error){
+            console.log("DB connected 5")
+            resolve({languageName: "python",id:"py"})
+        }else{
+            reject("error 502")
+        }
+    },1000)
+})
+
+async function consumedPromiseFive(){
+    try {
+    const response = await promiseFive
+    console.log(response)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+consumedPromiseFive()
+```
         
 
    
