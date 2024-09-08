@@ -259,7 +259,27 @@ consumedPromiseFive()
   - step 2: constructor function call hota hain new keyword ke karn ye sare argument ko pack kar ke de deta hain
   - step 3: all argument inject in this keyword
   - step 4: function ke ander mil jate hain
+## Prototypes
+- default behavior of Javascript is prototypal behavior
+- Object
+  ```mermaid
+graph LR;
+    Array --> Object
+    String --> Object
+    Function --> Object
+    Object --> null
+```
+  ```javascript
+     function multiplyBy7(num){
+          return num*7
+     }
+  
+     multiplyBy7.power = 2
 
+     console.log(multiplyBy7(8))          // 56
+     console.log(multiplyBy7.power)       // 2
+     console.log(multiplyBy5.prototype)   // {} prototype us method ka this hain
+  
 
    
 
