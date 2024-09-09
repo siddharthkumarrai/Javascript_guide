@@ -532,6 +532,7 @@ console.log(iphone.createId());
     }
 
     const app = new React()
+</script>
 ```
 
 
