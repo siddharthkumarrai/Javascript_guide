@@ -622,7 +622,7 @@ Heap Memory:
 
         let index = 0;                     // initialization
     
-        do(condition){
+        do {
               console.log("sidd")
               index++                     // incremant/decrement
         }while(condition);
