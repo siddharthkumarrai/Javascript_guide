@@ -382,9 +382,158 @@ anotherUsername.trueLength()
 "siddharth".trueLength()
 "iceTea".trueLength()
 ```
-  
+## call
+```javascript
+function SetUsername(username){
+    //complex DB calls
+    this.username = username
+    console.log("called");
+}
 
+function createUser(username, email, password){
+    SetUsername.call(this, username)
    
+    this.email = email
+    this.password = password
+}
+
+const sidd = new createUser("siddharth", "chai@fb.com", "123")
+console.log(sidd);
+```
+## classes
+```javascript
+// ES6
+
+class User {
+    constructor(username, email, password){
+        this.username = username;
+        this.email = email;
+        this.password = password
+    }
+
+    encryptPassword(){
+        return `${this.password}abc`
+    }
+    changeUsername(){
+        return `${this.username.toUpperCase()}`
+    }
+
+}
+
+const sidd = new User("siddharth", "chai@gmail.com", "123")
+
+console.log(sidd.encryptPassword());
+console.log(sidd.changeUsername());
+
+// behind the scene
+
+function User(username, email, password){
+    this.username = username;
+    this.email = email;
+    this.password = password
+}
+
+User.prototype.encryptPassword = function(){
+    return `${this.password}abc`
+}
+User.prototype.changeUsername = function(){
+    return `${this.username.toUpperCase()}`
+}
+
+
+const sidd = new User("siddharth", "tea@gmail.com", "123")
+
+console.log(sidd.encryptPassword());
+console.log(sidd.changeUsername());
+```
+## inheritance
+```javascript
+class User {
+    constructor(username){
+        this.username = username
+    }
+
+    logMe(){
+        console.log(`USERNAME is ${this.username}`);
+    }
+}
+
+class Teacher extends User{
+    constructor(username, email, password){
+        super(username)
+        this.email = email
+        this.password = password
+    }
+
+    addCourse(){
+        console.log(`A new course was added by ${this.username}`);
+    }
+}
+
+const sidd = new Teacher("siddharth", "chai@teacher.com", "123")
+
+chai.logMe()
+const abhi = new User("abhishek")
+
+masalaChai.logMe()
+
+console.log(sidd instanceof User);
+```
+## static property 
+```javascript
+class User {
+    constructor(username){
+        this.username = username
+    }
+
+    logMe(){
+        console.log(`Username: ${this.username}`);
+    }
+
+    static createId(){
+        return `123`
+    }
+}
+
+const hitesh = new User("hitesh")
+// console.log(hitesh.createId())
+
+class Teacher extends User {
+    constructor(username, email){
+        super(username)
+        this.email = email
+    }
+}
+
+const iphone = new Teacher("iphone", "i@phone.com")
+console.log(iphone.createId());
+```
+## bind
+```html
+<body>
+    <button>Button Clicked</button>
+</body>
+<script>
+    class React {
+        constructor(){
+            this.library = "React"
+            this.server = "https://localhost:300"
+
+            //requirement
+            document
+                .querySelector('button')
+                .addEventListener('click', this.handleClick.bind(this))
+
+        }
+        handleClick(){
+            console.log("button clicked");
+            console.log(this.server);
+        }
+    }
+
+    const app = new React()
+```
+
 
 
    
