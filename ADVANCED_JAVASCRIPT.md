@@ -672,8 +672,7 @@ console.log(sidd.email);
     myFunc();
 ```
 > practical implementation of Lexical scoping and Closures
-```javascript
-```html
+```HTML
 <body style="background-color: #313131;">
     <button id="orange">Orange</button>
     <button id="green">Green</button>
