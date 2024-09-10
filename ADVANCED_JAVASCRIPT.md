@@ -534,11 +534,11 @@ console.log(iphone.createId());
     const app = new React()
 </script>
 ```
-## getOwnPropertyDescriptor ( object ki kuch property ko change nahi karne dena )
+## ADVANCED OBJECT  getOwnPropertyDescriptor ( object ki kuch property ko change nahi karne dena )
 ```javascript
 const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
 
-// console.log(descripter);
+console.log(descripter);  // {value: 3.141592653589793, writable: false, enumerable: false, configurable: false }
 
 // console.log(Math.PI);
 // Math.PI = 5
