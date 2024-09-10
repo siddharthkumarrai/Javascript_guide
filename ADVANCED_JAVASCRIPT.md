@@ -677,14 +677,15 @@ console.log(sidd.email);
     <button id="orange">Orange</button>
     <button id="green">Green</button>
 </body>
-```
-```javascript
-        // document.getElementById("orange").onclick = function(){
-        //     document.body.style.backgroundColor = `orange`
-        // }
-        // document.getElementById("green").onclick = function(){
-        //     document.body.style.backgroundColor = `green`
-        // }
+<script>
+/*
+        document.getElementById("orange").onclick = function(){
+             document.body.style.backgroundColor = `orange`
+         }
+         document.getElementById("green").onclick = function(){
+             document.body.style.backgroundColor = `green`
+         }
+*/
 
         function clickHandler(color){
             // document.body.style.backgroundColor = `${color}`
@@ -696,6 +697,7 @@ console.log(sidd.email);
 
         document.getElementById('orange').onclick = clickHandler("orange")
         document.getElementById('green').onclick = clickHandler("green")
+</script>
 ```
 
 
