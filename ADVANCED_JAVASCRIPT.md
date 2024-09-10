@@ -597,7 +597,8 @@ class User {
 const sidd = new User("sidd@777.ai", "abc")
 console.log(sidd.email);
 ```
-> getter and setter through function
+> getter and setter through function 
+
 ```javascript
 function User(email, password){
     this._email = email;
@@ -624,6 +625,25 @@ function User(email, password){
 
 const sidd = new User("sidd@gmail.com", "siddharth")
 
+console.log(sidd.email);
+```
+> getter and setter through object
+```javascript
+const User = {
+    _email: 'sidd@gmail.com',
+    _password: "abc",
+
+
+    get email(){
+        return this._email.toUpperCase()
+    },
+
+    set email(value){
+        this._email = value
+    }
+}
+
+const sidd = Object.create(User)    // factory function
 console.log(sidd.email);
 ```
 
