@@ -646,6 +646,59 @@ const User = {
 const sidd = Object.create(User)    // factory function
 console.log(sidd.email);
 ```
+## Lexical scoping and Closures
+- Lexical scoping ( inner function outer function ke scope ke variable and methods ko access kar sakta hain )
+```javascript
+    function outer(){
+        let username = "hitesh"
+        function inner(){
+            console.log("inner", username);
+        }
+        inner()
+    }
+    outer()
+```
+- Closures  ( jab hum pura inner function hi return karte hain tab uska pura lexical scope hi return hota hain )
+```javascript
+    function outer() {
+        const name = "Siddharth";
+        function inner() {
+            console.log(name);
+        }
+        return inner;
+    }
+
+    const myFunc = outer();
+    myFunc();
+```
+> practical implementation of Lexical scoping and Closures
+```javascript
+```html
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+```
+```javascript
+        // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`
+        // }
+        // document.getElementById("green").onclick = function(){
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`
+
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('orange').onclick = clickHandler("orange")
+        document.getElementById('green').onclick = clickHandler("green")
+```
+
 
 
 
