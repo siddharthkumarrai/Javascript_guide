@@ -534,6 +534,41 @@ console.log(iphone.createId());
     const app = new React()
 </script>
 ```
+## getOwnPropertyDescriptor ( object ki kuch property ko change nahi karne dena )
+```javascript
+const descripter = Object.getOwnPropertyDescriptor(Math, "PI")
+
+// console.log(descripter);
+
+// console.log(Math.PI);
+// Math.PI = 5
+// console.log(Math.PI);
+
+const sidd = {
+    name: 'siddharth',
+    email: "sidd@gmail.com,
+    isAvailable: true,
+
+    orderChai: function(){
+        console.log("code fat gya");
+    }
+}
+
+console.log(Object.getOwnPropertyDescriptor(sidd, "name"));
+
+Object.defineProperty(sidd, 'name', {
+    //writable: false,
+    enumerable: true,
+})
+
+console.log(Object.getOwnPropertyDescriptor(sidd, "name"));
+
+for (let [key, value] of Object.entries(sidd)) {
+    if (typeof value !== 'function') {
+        console.log(`${key} : ${value}`);
+    }
+}
+```
 
 
 
