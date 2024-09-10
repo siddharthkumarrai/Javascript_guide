@@ -4,7 +4,7 @@
 
 i). let
 
-ii) const &nbsp; &nbsp; &nbsp; (*ERROR assignment to const variable(variable ko change nahi kar skte ek bar value assign karne ke bad)*) 
+ii) const &nbsp; &nbsp; &nbsp; (*ERROR assignment to const variable(Can't change variables once value is assigned)*) 
 
 iii) var
 > [!WARNING]
@@ -16,11 +16,11 @@ iii) var
 > alert(3+3)   &nbsp; &nbsp;  &nbsp;    (*ERROR, we are using nodejs,not browser*)
 
 
- ## DATATYPE  &nbsp;  &nbsp; (<small><small><small>_kis trha se memory mein rkha jata hain or access kara jata hain usi traha se data type ko 2 category mein divide kara hain_<small/><small/><small/>)
+ ## DATATYPE  &nbsp;  &nbsp; (<small><small><small>_The way data is stored and accessed in memory, data types are similarly divided into two categories._<small/><small/><small/>)
 
 EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards/standards/ecma-262/).
 
-1. Primitive  (call by value ( call karn pr copy milti hain))
+1. Primitive  (call by value ( When called, a copy is returned.))
      - Number       --> range (2<sup>53</sup>)
      - Bigint      --> ```const num = 123456789n```
      - Boolean     --> true/false
@@ -29,7 +29,7 @@ EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards
      - Undefined      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **typeof --> undefined
      - Symbol      --> unique
 
-1. Non Primitive (Reference)  (call by reference ( call karn pr address milta hain))
+1. Non Primitive (Reference)  (call by reference ( When called, an address is returned.))
      - Object      &nbsp; &nbsp; &nbsp; **typeof --> object
      - Array       &nbsp; &nbsp; &nbsp; &nbsp; **typeof --> object
      - Function    &nbsp; &nbsp; **typeof --> function
