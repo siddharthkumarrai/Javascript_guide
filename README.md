@@ -16,7 +16,7 @@ iii) var
 > alert(3+3)   &nbsp; &nbsp;  &nbsp;    (*ERROR, we are using nodejs,not browser*)
 
 
- ## DATATYPE  &nbsp;  &nbsp; (<small><small><small>_The way data is stored and accessed in memory, data types are similarly divided into two categories._<small/><small/><small/>)
+ ## DATATYPE  &nbsp;  &nbsp; (<small><small><small>_The way data is stored and accessed in memory, data types are similarly divided into two categories._<small/><small/><small/>) 
 
 EcmaScript [Read Docs](https://ecma-international.org/publications-and-standards/standards/ecma-262/).
 
