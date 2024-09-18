@@ -449,7 +449,7 @@ Heap Memory:
    sidd()
 
    const sidd = ()=>{
-      let username = "siddharth",
+      let username = "siddharth", 
       console.log(this.username}                            // undefined
       console.log(this)                                     // {}
    }
