@@ -1684,7 +1684,7 @@ console.log(sidd.email);
 - Lexical scoping ( inner function outer function ke scope ke variable and methods ko access kar sakta hain )
 ```javascript
     function outer(){
-        let username = "hitesh"
+        let username = "siddharth"
         function inner(){
             console.log("inner", username);
         }
