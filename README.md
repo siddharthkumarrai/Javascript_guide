@@ -1,6 +1,6 @@
 # JAVASCRIPT NOTES
 
-## VARIABLE
+## VARIABLE 
 
 i). let
 
