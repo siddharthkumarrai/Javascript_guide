@@ -1273,7 +1273,7 @@ consumedPromiseFive()
 - constructor function ( new keyword ) (in single instance create multiple object )
 ```javascript
    const promiseOne = new Promise()
-   const date new Date()
+   const date = new Date()
 
    function user( username, loginCount, isLoggedIn ){
         this.username = username;
